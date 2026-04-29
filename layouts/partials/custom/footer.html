@@ -1,0 +1,36 @@
+{{/*
+  SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+  SPDX-License-Identifier: CC0-1.0
+
+  Replaces Hextra's default copyright + "Powered by Hextra" footer
+  (those are disabled via [params.footer] in hugo.toml). This is the
+  user-facing site footer.
+
+  Strings come from i18n/{sv,en}.yaml so the footer matches the page
+  language (WCAG 3.1.2, Language of Parts).
+*/}}
+{{- $diggLabel    := (T "diggLogoLabel")        | default "Digg — Agency for Digital Government" -}}
+{{- $licPrefix    := (T "footerLicensePrefix")  | default "Content under" -}}
+{{- $srcLinkText  := (T "footerSourceLinkText") | default "Source code" -}}
+{{- $srcLinkSuf   := (T "footerSourceLinkSuffix") | default "on GitHub." -}}
+<div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-center hx:sm:justify-between hx:gap-6 hx:py-12">
+
+  {{/* Left: Digg logo */}}
+  <a href="https://www.digg.se/" target="_blank" rel="noreferrer"
+     class="hx:flex hx:items-center hx:hover:opacity-80 hx:transition-opacity"
+     aria-label="{{ $diggLabel }}">
+    <img src="{{ "images/digg-logo-color.svg" | relURL }}"
+         alt="{{ $diggLabel }}"
+         height="40" class="hx:h-10 hx:w-auto" />
+  </a>
+
+  {{/* Right: licence + source pointer */}}
+  <div class="hx:text-xs hx:text-gray-500 hx:dark:text-gray-500 hx:text-center hx:sm:text-right hx:leading-relaxed">
+    {{ $licPrefix }}
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="hx:underline hx:hover:text-gray-700 hx:dark:hover:text-gray-300">CC0-1.0</a>.
+    <a href="https://github.com/diggsweden/opensource-docs" class="hx:underline hx:hover:text-gray-700 hx:dark:hover:text-gray-300">{{ $srcLinkText }}</a> {{ $srcLinkSuf }}
+    <div class="hx:text-[10px] hx:text-gray-400 hx:dark:text-gray-600 hx:mt-1">
+      Version: {{ partial "custom/site-version.html" (dict "linkClass" "hx:underline hx:hover:text-gray-600 hx:dark:hover:text-gray-400") }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+# SPDX-License-Identifier: CC0-1.0
+#
+# English overrides and additions for our custom layouts. Hextra
+# ships its own i18n/en.yaml upstream, so we only need to declare
+# keys that are specific to our overrides (custom footer + navbar
+# home icon). Hugo merges this on top of the theme file.
+
+# Accessibility labels (screen reader only)
+diggLogoLabel: "Digg — Agency for Digital Government"
+home: "Home"
+
+# Custom footer strings (rendered in layouts/partials/custom/footer.html)
+footerLicensePrefix: "Content under"
+footerSourceLinkText: "Source code"
+footerSourceLinkSuffix: "on GitHub."

@@ -1,0 +1,119 @@
+/* SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+ * SPDX-License-Identifier: CC0-1.0
+ *
+ * Hextra picks up assets/css/custom.css automatically (see Hextra's
+ * head.html partial). Use this file for site-specific overrides.
+ */
+
+/* Brand color tuning — Swedish-government-digital register.
+ * Hextra computes its full primary-50…primary-900 scale from these
+ * three base values (see Hextra's styles.css @theme block).
+ * Default Hextra is hsl(212, 100%, 50%) — a vivid web blue.
+ * We pull saturation and lightness down a bit to land in deeper,
+ * more institutional territory closer to digg.se / swedenconnect.se
+ * without leaning loud. */
+:root {
+  --primary-hue: 210deg;
+  --primary-saturation: 75%;
+  --primary-lightness: 38%;
+}
+
+/* Dark mode contrast: Hextra uses --hx-color-primary-600 for link
+ * text and accents in dark mode, computed as
+ *   (--primary-lightness / 50) * 45
+ * With our light-mode lightness of 38%, primary-600 lands at ~34%
+ * — a deep blue that contrasts only ~2.7:1 against the near-black
+ * dark background. WCAG AA needs 4.5:1 for normal text.
+ *
+ * Hextra's primary-* scale is calc-based against --primary-lightness,
+ * and CSS custom properties resolve against the using element's
+ * cascade. Setting --primary-lightness under .dark therefore
+ * recomputes the entire scale to lighter values that pass AA,
+ * without affecting light mode. */
+.dark {
+  --primary-lightness: 58%;
+}
+
+/* Feature cards on the landing: taller minimum height so the row has
+ * proper presence, and stays balanced when one card has less text than
+ * another. Stretches naturally on smaller viewports because the grid
+ * drops to 2 or 1 columns. */
+.hextra-feature-card {
+  min-height: 18rem;
+}
+
+/* Strengthen the hover indication. Default Hextra steps the border by
+ * one gray increment, which is barely perceptible — users couldn't
+ * tell a card was clickable on mouseover. Switch to a Digg-brand sage
+ * green (extracted from images/digg-logo-color.svg) and add a 1px
+ * outer ring so the hovered card reads clearly without leaning loud
+ * the way the institutional primary-blue did. Specificity bumped via
+ * `a.hextra-feature-card` to win against the `hx:hover:border-gray-300`
+ * / `hx:dark:hover:border-neutral-700` utility classes baked into the
+ * card markup.
+ *
+ * WCAG 1.4.11 (Non-text Contrast, 3:1 against card background):
+ *   light  #556850 vs #fff  ≈ 5.4:1  ✓
+ *   dark   #838C7A vs #111  ≈ 5.9:1  ✓
+ */
+a.hextra-feature-card {
+  --card-hover-color: #556850;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.dark a.hextra-feature-card {
+  --card-hover-color: #838C7A;
+}
+a.hextra-feature-card:hover {
+  border-color: var(--card-hover-color);
+  box-shadow: 0 0 0 1px var(--card-hover-color);
+}
+
+/* Hide the sidebar's sticky-bottom language-switch + theme-toggle row.
+ * Hextra renders these at the bottom of the sidebar on docs pages by
+ * default; we have them in the navbar (via [[menu.main]]) so the sidebar
+ * version is just visual noise. The element is identified by its
+ * `data-toggle-animation="show"` data attribute. */
+.hextra-sidebar-container > div[data-toggle-animation="show"] {
+  display: none;
+}
+
+/* Footer alignment: by default Hextra's language-switcher row uses
+ *   <div class="hx:mx-auto hx:py-2 hx:px-4 hextra-max-footer-width">
+ * (centered, 1rem horizontal padding), but the custom-footer wrapper
+ * uses
+ *   hx:pl-[max(env(safe-area-inset-left),1.5rem)]
+ * (left-aligned, 1.5rem padding). That makes the Digg logo and the
+ * language selector start at different x-positions on wide viewports.
+ * Center the custom footer with the same horizontal padding so they
+ * line up vertically. */
+.hextra-custom-footer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Inside the card, lay out the title/subtitle with a small bit of
+ * breathing room so a single short subtitle doesn't sit pressed
+ * against the title. */
+.hextra-feature-card > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 0.5rem;
+}
+
+/* Bump the feature-card subtitle from text-sm (0.875rem) to text-base
+ * (1rem) — Hextra's default is too small for content this important
+ * on the landing. */
+.hextra-feature-card p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Checklist task lists: extra breathing room between checkbox and
+ * content so the SKA/BÖR marker doesn't sit pressed against the box.
+ * Targets all task-list checkboxes inside content. */
+li > input[type="checkbox"] {
+  margin-right: 0.5em;
+}

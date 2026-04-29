@@ -1,0 +1,39 @@
+{{/*
+  SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+  SPDX-License-Identifier: CC0-1.0
+
+  Local override of Hextra's _partials/utils/lang-link.html.
+
+  Difference vs upstream: `where $page.Sites ".Language.Lang" $lang`
+  becomes `where hugo.Sites ".Language.Lang" $lang` to silence the
+  Hugo 0.156+ deprecation warning for `.Page.Sites` / `.Site.Sites`.
+  Behaviour is identical — both calls return the same Site list.
+
+  Re-sync with upstream when Hextra updates the API. Source:
+  github.com/imfing/hextra/layouts/_partials/utils/lang-link.html
+*/}}
+{{/* Get relative link of a page for given language */}}
+{{/* If not found, return the homepage of the language page */}}
+
+{{ $page := .context }}
+{{ $lang := .lang }}
+
+{{ $link := false }}
+
+{{ range $page.AllTranslations }}
+  {{ if eq .Language.Lang $lang }}
+    {{ $link = .RelPermalink }}
+  {{ end }}
+{{ end }}
+
+{{ if not $link }}
+  {{ range where hugo.Sites ".Language.Lang" $lang }}
+    {{ $link = .Home.RelPermalink }}
+  {{ end }}
+{{ end }}
+
+{{ if not $link }}
+  {{ $link = site.Home.RelPermalink }}
+{{ end }}
+
+{{ return $link }}
