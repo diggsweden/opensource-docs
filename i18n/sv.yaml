@@ -1,0 +1,58 @@
+# SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+# SPDX-License-Identifier: CC0-1.0
+#
+# Swedish translations for Hextra UI strings.
+# Hextra v0.12.2 ships 21 languages but no Swedish — this file fills
+# the gap. Keys taken from Hextra's i18n/en.yaml; resync that list
+# when bumping Hextra.
+
+# Accessibility labels (screen reader only)
+closeBanner: "Stäng banner"
+diggLogoLabel: "Digg — Myndigheten för digital förvaltning"
+home: "Till startsidan"
+menu: "Meny"
+mermaidDiagram: "Diagram"
+pdfViewer: "PDF-visare"
+permalinkLabel: "Permalänk till denna sektion"
+playbackTime: "Speltid"
+searchResults: "Sökresultat"
+skipToContent: "Hoppa till innehåll"
+tableOfContents: "Innehållsförteckning"
+terminalRecording: "Terminalinspelning"
+togglePageContextMenu: "Växla sidkontextmeny"
+toggleSection: "Växla sektion"
+
+# Accessibility live-region/status text
+resultsFound: "%d resultat hittade"
+
+# User-facing UI text
+archives: "Arkiv"
+backToTop: "Till toppen"
+changeLanguage: "Byt språk"
+changeTheme: "Byt tema"
+copy: "Kopiera"
+copied: "Kopierat!"
+copyAsMarkdown: "Kopiera som Markdown"
+copyPage: "Kopiera sidan"
+copyCode: "Kopiera kod"
+copyright: "© 2026"
+dark: "Mörkt"
+editThisPage: "Redigera sidan på GitHub →"
+lastUpdated: "Senast uppdaterad"
+light: "Ljust"
+next: "Nästa"
+noResultsFound: "Inga träffar."
+onThisPage: "På denna sida"
+more: "Mer"
+poweredBy: "Powered by Hextra"
+previous: "Föregående"
+readMore: "Läs mer →"
+searchPlaceholder: "Sök..."
+system: "System"
+tags: "Etiketter"
+viewAsMarkdown: "Visa som Markdown"
+
+# Custom footer strings (rendered in layouts/partials/custom/footer.html)
+footerLicensePrefix: "Innehåll under"
+footerSourceLinkText: "Källkod"
+footerSourceLinkSuffix: "på GitHub."

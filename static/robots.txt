@@ -1,0 +1,8 @@
+# SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+# SPDX-License-Identifier: CC0-1.0
+#
+# Pilot phase — noindex until accessibility statement is signed off and the site launches publicly.
+# After launch, this file will be replaced with a normal Allow-all robots.txt.
+
+User-agent: *
+Disallow: /

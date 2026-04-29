@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+#
+# SPDX-License-Identifier: CC0-1.0
+
+version = 1
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Digg - Agency for Digital Government"
+SPDX-License-Identifier = "CC0-1.0"
+
+# The Digg logo (in either form) is Digg's own brand — reproduced
+# here under Digg's authority as publisher; not under a free license.
+# REUSE.toml globs are gitignore-style and do not support brace expansion,
+# so png and svg are listed separately.
+[[annotations]]
+path = ["static/images/digg-logo*.png", "static/images/digg-logo*.svg"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Digg - Agency for Digital Government"
+SPDX-License-Identifier = "LicenseRef-DiggLogo"

@@ -1,0 +1,94 @@
+baseURL = 'https://diggsweden.github.io/opensource-docs/'
+title = 'Handbok för att arbeta med öppen källkod'
+
+defaultContentLanguage = 'sv'
+defaultContentLanguageInSubdir = true
+
+enableRobotsTXT = false   # using static/robots.txt with Disallow: / during pilot
+enableEmoji = false
+cleanDestinationDir = true
+
+[languages]
+  [languages.sv]
+    languageCode = 'sv-SE'
+    languageName = 'Svenska'
+    contentDir = 'content/sv'
+    weight = 1
+    title = 'Handbok för att arbeta med öppen källkod'
+    [languages.sv.params]
+      description = "Stöddokument"
+  [languages.en]
+    languageCode = 'en'
+    languageName = 'English'
+    contentDir = 'content/en'
+    weight = 2
+    title = 'Handbook for working with open source software'
+    [languages.en.params]
+      description = "Supporting documents"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/imfing/hextra'
+
+[params]
+  description = "Stöddokument"
+
+  [params.navbar]
+    displayTitle = false
+    displayLogo = false
+
+  [params.footer]
+    enable = true
+    displayCopyright = false
+    displayPoweredBy = false
+
+  [params.search]
+    enable = true
+    type = 'flexsearch'
+    [params.search.flexsearch]
+      index = 'content'
+      tokenize = 'forward'
+      # Vendored locally to avoid jsdelivr CDN fetch at build time.
+      js = 'js/vendor/flexsearch.bundle.min.js'
+
+  [params.theme]
+    default = 'system'
+    displayToggle = true
+
+  [params.toc]
+    displayTags = true
+
+# Navbar menu entries — Hextra's navbar.html iterates over [[menu.main]] and
+# renders these special types in-place. Putting search + language-switch +
+# theme-toggle here moves them from the footer/sidebar into the navbar.
+[[menu.main]]
+  name = "Search"
+  weight = 1
+  params = { type = "search" }
+
+[[menu.main]]
+  name = "Language"
+  weight = 2
+  params = { type = "language-switch", icon = "globe-alt" }
+
+[[menu.main]]
+  name = "Theme"
+  weight = 3
+  params = { type = "theme-toggle" }

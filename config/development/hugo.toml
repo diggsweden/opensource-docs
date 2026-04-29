@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+# SPDX-License-Identifier: CC0-1.0
+#
+# Local development override.
+#
+# Hugo merges this on top of the root hugo.toml when the environment is
+# "development" — which is the default for `hugo server`. CI runs `hugo`
+# (environment "production"), which ignores this file.
+#
+# Result: `hugo server` Just Works at http://localhost:1313/ without flags;
+# CI deploys with the production baseURL untouched.
+
+baseURL = 'http://localhost:1313/'

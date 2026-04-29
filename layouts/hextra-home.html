@@ -1,0 +1,25 @@
+{{/*
+  SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+  SPDX-License-Identifier: CC0-1.0
+
+  Local override of Hextra's hextra-home.html.
+
+  One change vs upstream: <main> is a flex column and the inner
+  content wrapper has `flex-1 w-full`, so the last child element
+  with `hx:mt-auto` (e.g. our small status note on the SV/EN
+  landing) is pushed to the bottom of the viewport instead of
+  leaving whitespace between sparse content and the footer.
+
+  The rest is byte-identical to imfing/hextra/layouts/hextra-home.html;
+  re-sync when bumping Hextra.
+*/}}
+{{ define "main" }}
+  <div class='hx:mx-auto hx:flex hextra-max-page-width'>
+    {{ partial "sidebar.html" (dict "context" . "disableSidebar" true) }}
+    <main id="content" class="hx:w-full hx:break-words hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:pb-8 hx:pt-8 hx:md:pt-12 hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-left),1.5rem)] hx:flex hx:flex-col">
+      <div class="hx:flex hx:flex-col hx:items-start hx:flex-1 hx:w-full">
+        {{ .Content }}
+      </div>
+    </main>
+  </div>
+{{ end }}

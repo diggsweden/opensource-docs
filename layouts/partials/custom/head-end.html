@@ -1,0 +1,20 @@
+{{/*
+  SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+  SPDX-License-Identifier: CC0-1.0
+
+  Pilot-phase noindex. Removed when the site goes public after the
+  accessibility statement is signed off.
+*/}}
+<meta name="robots" content="noindex, nofollow">
+
+{{/* Make Markdown task-list checkboxes interactive (Goldmark renders them disabled by default) */}}
+{{- $tasklist := resources.Get "js/tasklist.js" | resources.Fingerprint -}}
+{{- with $tasklist }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{- end }}
+
+{{/* Single-click light/dark toggle — paired with our theme-toggle.html override */}}
+{{- $themeToggle := resources.Get "js/theme-toggle.js" | resources.Fingerprint -}}
+{{- with $themeToggle }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{- end }}
