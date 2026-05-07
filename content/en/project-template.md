@@ -47,4 +47,5 @@ Suggestions and corrections for the template itself are received directly in [`d
 
 - [Working on GitHub](../working-on-github/): account setup, security, issue handling and publication
 - [Checklists](../checklists/): publication, security, licensing, stewardship
+- [Badges in README and CONTRIBUTING](../reference/badges/): recommended status and process badges
 - [Glossary](../glossary/): terms like REUSE, OSI, OpenSSF Scorecard, Standard for Public Code

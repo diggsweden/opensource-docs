@@ -76,9 +76,11 @@ Projects no longer actively maintained but kept as reference material to build u
 ## Stewardship of the project list
 
 Projects without an active maintainer are archived. Activity is judged according to the pattern in [Working on GitHub: Archiving projects](../working-on-github/#archiving-projects).
+For security practice and project health, see also the [OpenSSF Scorecard report](../reports/openssf-scorecard/).
 
 ## See also
 
 - [Template project for open source software](../project-template/): starter structure for new projects
 - [Working on GitHub](../working-on-github/): account setup, security, issue handling and publication
+- [Reports](../reports/): generated reports about project health, security and stewardship
 - [Other Swedish public sector organisations](../reference/other-public-sector-organisations/): state agencies, municipalities and regions on code-collaboration platforms

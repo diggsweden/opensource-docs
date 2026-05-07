@@ -14,9 +14,9 @@ För källor och underliggande standarder, se [Standarder, specifikationer och p
 |---|---|
 | Slutanvändare av öppen programvara | [Användning av öppen programvara](anvandning/) |
 | Beställare / upphandlare | [Anskaffning](anskaffning/) |
-| Projektledare | [Anskaffning §E](anskaffning/#e-dokumentation-av-beslut) + [Förberedelse inför publicering §A](publicering-forvaltning/#a-beslut-ansvar-och-underhållsansvariga) + [Diarieföring och arkivering](diarie-arkiv/) |
-| Systemägare / chef | [Anskaffning §E](anskaffning/#e-dokumentation-av-beslut) + [Diarieföring och arkivering](diarie-arkiv/) |
-| Arkitekt | [Anskaffning §B](anskaffning/#b-val-av-projektlösning) + [Säkerhet §B](sakerhet/#b-beroenden-och-komponenter) + [Arbete på kodsamverkansplattform](plattform/) |
+| Projektledare | [Anskaffning](anskaffning/) + [Förberedelse inför publicering](publicering-forvaltning/) + [Diarieföring och arkivering](diarie-arkiv/) |
+| Systemägare / chef | [Anskaffning](anskaffning/) + [Diarieföring och arkivering](diarie-arkiv/) |
+| Arkitekt | [Anskaffning](anskaffning/) + [Säkerhet](sakerhet/) + [Arbete på kodsamverkansplattform](plattform/) |
 | Utvecklare som vill publicera | [Förberedelse inför publicering](publicering-forvaltning/) → [Publicering av version 1.0.0](publicering-1.0/) |
 | Utvecklare som bidrar uppström | [Bidrag uppströms](bidrag-uppstrom/) |
 | Underhållsansvarig | [Förberedelse inför publicering](publicering-forvaltning/) + [Hantering av ärenden, frågor och externa bidrag](arenden-community/) |

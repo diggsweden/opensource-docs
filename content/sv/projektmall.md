@@ -47,4 +47,5 @@ Förslag och rättelser till mallen själv tas emot direkt i [`diggsweden/open-s
 
 - [Arbete på GitHub](../arbeta-pa-github/): kontoupplägg, säkerhet, ärendehantering och publicering
 - [Checklistor](../checklistor/): publicering, säkerhet, licenser, förvaltning
+- [Badges (statusmärken) i README och CONTRIBUTING](../referens/badges/): rekommenderade status- och processbadges
 - [Terminologi](../terminologi/): begrepp som REUSE, OSI, OpenSSF Scorecard, Standard for Public Code

@@ -1,10 +1,17 @@
 ---
 title: "Release preparation"
-description: "Checklist for release preparation: maintainer declaration, versioning and baseline requirements"
+description: "Baseline check before open publication: decisions, responsibilities, documentation, licensing and release practice"
 weight: 70
 ---
 
-**Purpose:** Ensure that open projects are safe to publish, intelligible to use and clear to the outside world.
+**Purpose:** Ensure that a project is safe to publish openly, intelligible to use and clear to the outside world.
+
+**Practical start:** For new projects, or internal projects that are being opened up, consider starting from the [Template project for open source software](../../project-template/).
+The template helps with standard files, REUSE support, `publiccode.yml`, issue/PR templates and basic CI structure.
+Always verify that content, contact routes and workflows are adapted to the actual project.
+
+**Detailed controls:** This checklist gathers the baseline requirements before publication.
+When an item concerns security, licensing or the code-collaboration platform, it links to the relevant specialist checklist where the details live.
 
 **Next step:** Once the basic requirements are met and the project is approaching a stable release, see [Release 1.0.0](../release-1.0/).
 
@@ -18,85 +25,64 @@ The Digg guidelines' responsibility model:
 | System owner / operational unit manager | The software is handled in line with the guidelines; risks, licences, dependencies and security are followed up |
 | Operational team | Day-to-day work with code, dependencies, issues, external contributions, documentation |
 
-- [ ] **MUST**: The decision to publish is made by an authorised manager/system owner (information owner).
+- [ ] **MUST**: The decision to publish openly is made by an authorised manager/system owner and recorded. Any deviations from policy/guidelines are justified and recorded. The link between case and repository is documented. See [Recordkeeping and archiving](../recordkeeping-and-archiving/).
 - [ ] **MUST**: The operational team is identified and informed. If the project concerns several information owners, the division of responsibility is clarified.
-- [ ] **MUST**: The link to the registered case (project number, registry number) is documented, so that the project can be traced back to its agency decision. See [Recordkeeping and archiving](../recordkeeping-and-archiving/).
-- [ ] **MUST**: The README contains a maintainer section identifying team, individual or role, so that the outside world knows who runs the project.
-- [ ] **MUST**: The software is publicly available on the Internet **already during development** (source code, documentation, build scripts). Open development is the default, not a finished delivery.
+- [ ] **MUST**: Maintainers are identified in the README. Use `CODEOWNERS` where responsibility per file area needs to be identified. See [Working on a code-collaboration platform](../platform/).
 - [ ] **MUST**: The issue tracker is public and turned on for as long as the service is actively developed. See [Handling of issues, questions and external contributions](../issues-and-contributions/).
 - [ ] **MUST**: Contributors certify the right to contribute, either via a DCO (Developer Certificate of Origin: signed commits with `Signed-off-by:`) or via a CLA (Contributor License Agreement). This ensures that we have the right to take in the code. See [Upstream contribution](../upstream-contribution/) for the contributor side.
-- [ ] **SHOULD**: A `CODEOWNERS` file is used to identify the responsible parties per file area. See [Working on a code-collaboration platform](../platform/).
-- [ ] **SHOULD**: Operational teams have basic knowledge of established working practices, secure development and licence management.
+- [ ] **SHOULD**: Operational teams have basic knowledge of established working practices, secure development and licence management. See [opensource.guide](https://opensource.guide/).
+- [ ] **SHOULD**: The software is publicly available on the Internet **already during development** (source code, documentation, build scripts). Open development is the default, not a finished delivery.
 
-## B. Open-source-specific security checks before publication
+## B. Security before publication
 
 General security requirements (information classification, risk analysis, secure systems development) follow Digg's IT-security guideline and Information-handling guideline.
-The items below are the controls that are specific to open source software and required *before* the source code goes public.
+The detailed open source controls are in [Security](../security/).
 
-- [ ] **MUST**: The code has been reviewed so that no sensitive data remains (passwords, API keys, tokens, internal addresses, document links). **Note:** cleaning history is hard; review early.
-- [ ] **MUST**: Logs, test data and configuration files containing sensitive information have been removed or masked.
-- [ ] **MUST**: It is clear what should be public and what should be internal; the information classification is complete (carried out under the Information-handling guideline).
-- [ ] **MUST**: Code review has been carried out. See [Working on a code-collaboration platform](../platform/).
-
-For deeper open-source-specific security requirements, see [Security](../security/).
+- [ ] **MUST**: Information classification is complete and the project is assessed as suitable for open publication.
+- [ ] **MUST**: The security review described in [Security](../security/) has been carried out. It covers sensitive data in code, logs, test data and configuration, as well as the reporting route for vulnerabilities.
+- [ ] **MUST**: Code review and change flow follow [Working on a code-collaboration platform](../platform/).
 
 ## C. Licence and rights
 
-- [ ] **MUST**: The licence is chosen in line with Digg's guidelines and is OSI-approved. See [Licensing](../licensing/).
-- [ ] **MUST**: A `LICENSE` file is present in the project.
-- [ ] **MUST**: The project follows the [REUSE specification](https://reuse.software/) (per-file licence and copyright marking). See [Licensing](../licensing/).
-- [ ] **MUST**: Licences for dependencies have been checked and documented.
+- [ ] **MUST**: The licence choice is made and documented according to [Licensing](../licensing/). The licence is OSI-approved, suitable for the project's purpose and documented in `LICENSE`.
+- [ ] **MUST**: REUSE/SPDX marking and dependency licences are verified according to [Licensing](../licensing/).
 - [ ] **MUST**: Deviation decisions (if a proprietary solution is chosen) are approved by the IT manager and documented.
+- [ ] **SHOULD**: The project aims to meet [ISO/IEC 5230 (OpenChain)](https://www.iso.org/standard/81039.html) for licence management where reasonable. This is an international standard for organisational licence compliance.
 
 ## D. Documentation and project health
 
-According to the Digg guidelines §*Documentation, procedures and project health*, projects shall provide a clear picture of what the solution does, how it is used, what prerequisites apply and under what licence terms it is provided.
+Projects shall give users a clear picture of what the solution does, how it is used, what prerequisites apply and under what licence terms it is provided.
+Use the [Template project for open source software](../../project-template/) as the starting point for standard files.
 
-- [ ] **MUST**: Title and description (what, for whom, in which environment).
-- [ ] **MUST**: `LICENSE`: choice of licence covering source code, documentation and other parts.
-- [ ] **MUST**: Instructions for installing and running the software.
-- [ ] **MUST**: Instructions for setting up a development environment and building.
-- [ ] **MUST**: Instructions for how externals can contribute (`CONTRIBUTING.md`).
-- [ ] **MUST**: Acknowledgement of contributing parties. A list (e.g. an AUTHORS file or a contributors section) credits the people and organisations whose work is in the project.
-- [ ] **MUST**: Code of conduct (`CODE_OF_CONDUCT.md`), e.g. Contributor Covenant. Sets the social ground rules for the community.
-- [ ] **MUST**: Contact route for questions and bug reports (issues, email, community).
-- [ ] **MUST**: Usage documentation and architecture description relevant to the project.
-- [ ] **MUST**: Design documentation showing the system's actors, actions and **external interfaces**, so that other public authorities can assess reusability without reading the entire codebase.
+- [ ] **MUST**: Standard files and baseline documentation are present and adapted to the project, not just copied from a template.
+- [ ] **MUST**: The README or equivalent front page describes what the project does, for whom, in which environment, and how the software is installed and run.
+- [ ] **MUST**: There are instructions for development, building and external contributions, including quality requirements and test expectations.
+- [ ] **MUST**: Contact routes, code of conduct and acknowledgement of contributors are documented.
+- [ ] **MUST**: Usage documentation, architecture description and relevant external interfaces are documented so that other public authorities can assess reusability without reading the entire codebase.
 - [ ] **SHOULD**: Documentation is written in plain language and adapted to a broader audience.
 
 ## E. Status, stewardship and support window
 
-- [ ] **MUST**: It is clear whether the project is actively maintained or archived/closed.
-- [ ] **MUST**: Maturity level is declared (alpha/beta/stable/deprecated).
-- [ ] **MUST**: There is a plan for how incoming issues and pull requests will be handled. See [Handling of issues, questions and external contributions](../issues-and-contributions/).
-- [ ] **MUST**: An overall strategy for dependency updates is described.
-- [ ] **MUST**: A release plan with strategies for communication and dissemination is in place.
-- [ ] **MUST**: Someone is appointed responsible for security issues. See [Security](../security/).
+- [ ] **MUST**: Status and maturity are clear (actively maintained, archived/closed, alpha/beta/stable/deprecated).
+- [ ] **MUST**: The stewardship plan describes handling of issues and pull requests, dependency updates, release communication and responsibility for security issues. See [Handling of issues, questions and external contributions](../issues-and-contributions/) and [Security](../security/).
 - [ ] **SHOULD**: A support window ("security updates until YYYY-MM-DD") is published, so that users know how long they can rely on updates.
 
 ## F. Publication
 
-- [ ] **MUST**: The project name has been checked against existing projects and trademarks.
-- [ ] **MUST**: A search-engine check has been carried out to ensure the name does not clash.
-- [ ] **MUST**: The project is in the right organisation/space at the Git provider.
-- [ ] **MUST**: Visibility (public) is correctly set in line with the information classification.
+- [ ] **MUST**: The project name has been checked against existing projects, trademarks and search results.
+- [ ] **MUST**: The project is in the right organisation/space at the Git provider and visibility (public) is correctly set in line with the information classification.
 - [ ] **MUST**: Any external communication (web, data portal, community) is planned.
 
 ## G. Versioning and releases
 
 - [ ] **MUST**: The project uses [Semantic Versioning 2.0.0](https://semver.org/) (X.Y.Z, i.e. major/minor/patch); stable APIs are supported and deprecation is flagged early. Many projects remain in 0.x for a long time while the API stabilises — see [SemVer FAQ: When to release 1.0.0](https://semver.org/#how-do-i-know-when-to-release-100).
 - [ ] **MUST**: Release tags are used. Each released version is tagged in version control so users can locate and verify the exact code.
-- [ ] **MUST**: [Conventional Commits](https://www.conventionalcommits.org/) format is used for structured project history. This makes auto-generated changelogs and version bumps possible.
-- [ ] **MUST**: [Keep a Changelog](https://keepachangelog.com/) format is used for clear release history.
-- [ ] **MUST**: It is easy for end users to upgrade to new releases (clear upgrade instructions in the changelog/release notes).
-- [ ] **MUST**: Releases are signed and have verification instructions. See [Security](../security/).
+- [ ] **MUST**: Project history and release history are structured with [Conventional Commits](https://www.conventionalcommits.org/) and [Keep a Changelog](https://keepachangelog.com/). Upgrade instructions in the changelog or release notes make it easy for end users to upgrade.
+- [ ] **MUST**: Releases are signed and have verification instructions according to [Security](../security/).
 
 ## H. Quality, discoverability and public code
 
-- [ ] **MUST**: A `publiccode.yml` is in the root folder. This is a standardised metadata file that is indexed by catalogues such as [Joinup EU catalogue](https://interoperable-europe.ec.europa.eu/eu-oss-catalogue) and [offentligkod.se](https://offentligkod.se), so that the project becomes discoverable.
-- [ ] **SHOULD**: For a long-term in-house fork of an external project, the fork is registered at [offentligkod.se](https://offentligkod.se) or in [Joinup](https://joinup.ec.europa.eu/), so that other public authorities can find and reuse it.
-- [ ] **SHOULD**: The Standard for Public Code is used as a benchmark for quality and sustainability (international standard for public code).
-- [ ] **SHOULD**: The project is configurable for different contexts (no hard-coded environment- or organisation-specific information), so that other public authorities can reuse it.
-- [ ] **MUST**: If the project is intended to run in the agency's own environments, it must also be buildable and deployable there, in line with the agency's internal developer guidelines.
-- [ ] **SHOULD**: The project's goals and roadmap are documented.
-- [ ] **SHOULD**: If the project implements rules or policy as code, the source of the rule/policy is bundled in the repository, so that code and policy source can be compared.
+- [ ] **MUST**: A `publiccode.yml` is used where applicable. This is a standardised metadata file that is indexed by catalogues such as [Joinup EU catalogue](https://interoperable-europe.ec.europa.eu/eu-oss-catalogue) and [offentligkod.se](https://offentligkod.se), so that the project becomes discoverable.
+- [ ] **SHOULD**: The project is assessed for reusability: [Standard for Public Code](https://standard.publiccode.net/) is used as a benchmark and the project is configurable for different contexts (no hard-coded environment- or organisation-specific information).
+- [ ] **MUST**: If the project is intended to run in the agency's own internal environments, it must also be buildable and deployable there, in line with the agency's internal developer guidelines.
+- [ ] **SHOULD**: The project's goals and roadmap are documented. If the project implements rules or policy as code, the source of the rule/policy is bundled in the repository so that code and policy source can be compared.

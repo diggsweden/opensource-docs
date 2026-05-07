@@ -1,21 +1,10 @@
 ---
 title: "About this handbook"
-description: "About Digg's open source handbook: terminology, themes, policy"
+description: "About Digg's open source handbook: policy, privacy, licence and contributions"
 weight: 90
 ---
 
-This is a page about the handbook itself — which themes it covers, what applies to privacy and licensing, and how to contribute.
-
-## Digg's themes on GitHub
-
-Digg's open code is grouped into several themes on `github.com/diggsweden`.
-Each theme has its own documentation site:
-
-| Theme | Location |
-|---|---|
-| Open source | this handbook |
-| Wallet ecosystem | [docs.wallet.digg.se](https://docs.wallet.digg.se/) *(planned)* |
-| Open data (DCAT-AP-SE) | [docs.dataportal.se/dcat](https://docs.dataportal.se/dcat) |
+This is a page about the handbook itself: what it builds on, what applies to privacy and licensing, and how to contribute.
 
 ## Policy and guidelines
 
@@ -58,7 +47,7 @@ Suggestions and corrections are gratefully received via issues and pull requests
 
 ## Status
 
-This handbook is **working material** under development.
+Current version: {{< site-version >}}.
 
 ## See also
 

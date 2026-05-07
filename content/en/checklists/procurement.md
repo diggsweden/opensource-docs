@@ -6,79 +6,40 @@ weight: 10
 
 **Purpose:** Support for procurement officers, requirements specifiers and system owners when open source software is being considered or selected.
 
-## A. Preparation — needs and requirements
+**What this checklist covers — and doesn't:** It only lists what is specific to open source software. General procurement requirements — information security, IT security, operations, architecture, TCO, recordkeeping, appointed system owner etc. — are assumed to be handled according to your ordinary processes and are not covered here.
 
-- [ ] **MUST**: The business need is described (what, for whom, in which environment).
-- [ ] **MUST**: When procuring open source software, services are procured (implementation, support, maintenance, training), not the software itself (which is freely available).
-- [ ] **MUST**: Requirements specifiers and procurement officers propose specific open source software in the procurement document. This eases the procurement and counters vendor lock-in.
-- [ ] **MUST**: The Swedish Legal, Financial and Administrative Services Agency's (Kammarkollegiet) guidance has been consulted: a mandatory requirement for specific named open source software with an OSI-approved licence may be set in procurement.
-- [ ] **MUST**: Information-security requirements are identified (information classification).
-- [ ] **MUST**: IT-security requirements are identified (logging, patching, operating environment).
-- [ ] **MUST**: Interoperability and open-standards requirements are formulated in line with the [Interoperability Regulation (EU) 2024/903](https://eur-lex.europa.eu/eli/reg/2024/903/oj) and the European Interoperability Framework (EIF). Digg's policy and guidelines reference the regulation explicitly.
-- [ ] **MUST**: Open source has been considered as the first choice. If another option is chosen, a justification is provided.
+When procuring open source software the rules are different from traditional software procurement: the software itself is freely available and what is procured are the services around it (implementation, support, maintenance, training). Requirements specifiers and procurement officers can therefore name specific open source software directly in the procurement document; competition shifts to the services instead of the product choice, which counters vendor lock-in.
 
-## B. Choice of project or solution
+This is explicitly permitted by Kammarkollegiet's [guidance for call-offs from *Software and Services*](https://www.avropa.se/globalassets/bilagor/1.-aktuella-rao/programvaror-och-tjanster/avropsstod-samtl-delomraden/vagledning-programvaror--och-tjanster.pdf) (in Swedish), section 3.3 "Software with open source code":
 
-### Functionality and fit
-
-- [ ] **MUST**: The open source solution meets the central functional requirements.
-- [ ] **MUST**: The solution can run in the organisation's technical environment (platforms, integrations).
-
-### Project health
-
-- [ ] **MUST**: The project is updated regularly (commits, releases, issues).
-- [ ] **MUST**: There is a clear primary actor or organisation behind the project.
-- [ ] **MUST**: Bug reports and improvement suggestions are handled within a reasonable time.
-- [ ] **MUST**: The project has documented security handling (`SECURITY.md`, vulnerability policy).
-- [ ] **SHOULD**: The project provides an SBOM (composition), release signatures (authenticity) and a support window (how long it is security-updated).
-- [ ] **SHOULD**: The OpenSSF Scorecard score, or an equivalent health assessment, has been reviewed. Scorecard gives an automatic score on the project's security practices.
-
-### Community and governance
-
-- [ ] **MUST**: There is an active community around the project.
-- [ ] **MUST**: It is clear how to contribute (`CONTRIBUTING.md`, governance, code review).
-
-## C. Licence, terms and liability
-
-- [ ] **MUST**: The licence is identified and OSI-approved. See [Licensing](../licensing/).
-- [ ] **MUST**: The licence is compatible with how the organisation intends to use the software (operation, modification, possibly own publication).
-- [ ] **MUST**: Third-party licences are identified and assessed for compatibility.
-- [ ] **MUST**: The "as is" terms of the software and the organisation's quality and risk responsibility are understood. Open source software is provided without warranty; responsibility for operation and quality rests with the user.
-
-## D. Security and operations
-
-For deeper assessment criteria around open source security, see [Security](../security/).
-
-- [ ] **MUST**: Procedures for monitoring and handling vulnerabilities and security updates are clear.
-- [ ] **MUST**: Support for logging, monitoring and operations exists in the organisation's IT environment.
-- [ ] **MUST**: The solution fits the organisation's architecture (integrations, dependencies, networks).
-- [ ] **SHOULD**: Total Cost of Ownership (TCO) over the lifecycle has been estimated. TCO includes not only the licence but also operations, integration, skills and stewardship.
-- [ ] **SHOULD**: An exit or migration plan exists, even when the alternative is open source. Lock-in can occur even with specific open source projects.
-
-## E. Decision documentation
-
-- [ ] **MUST**: Assessment and choice/non-choice are documented.
-- [ ] **MUST**: If proprietary software is chosen instead of open source: the decision is motivated and documented (functional, technical, security or financial reasons).
-- [ ] **MUST**: When open source is not appropriate or possible, there is a documented justification (deviation decision).
-- [ ] **MUST**: A system owner or product owner is appointed and informed.
-- [ ] **MUST**: The decision is recorded in the registry. See [Recordkeeping and archiving](../recordkeeping-and-archiving/).
-
-## F. Procurement rules for open source software
-
-- [ ] **MUST**: It is understood that Kammarkollegiet's framework agreement *Software and Services* allows mandatory requirements for specific named software with an OSI-approved licence that is free and open for any supplier to use.
-- [ ] **MUST**: It is understood that mandatory open-standards requirements may be set if the standard meets the criteria of SOU 2009:86.
-
-## G. Support and guidance
-
-- [ ] **MUST**: Kammarkollegiet's guidance on call-offs from *Software and Services* has been consulted (contains the full quote in the "Requirements catalogue" appendix).
-- [ ] **MUST**: [NOSAD's guidance on procurement of open source](https://nosad.se/upphandling-oss) (in Swedish) has been consulted.
-- [ ] **SHOULD**: Inköpsrådet's article series on procurement and open source has been consulted: [Share costs and avoid lock-in](https://inkopsradet.se/upphandling/dela-kostnader-och-undvik-inlasningar/) (part 1, in Swedish).
-
----
-
-> **Appendix from Kammarkollegiet's guidance (translated):**
-> The buyer may set a mandatory requirement for specific named software which in its entirety
-> - is licensed under one or more licences approved by the Open Source Initiative (OSI),
-> - is free and open for all suppliers to use (no reseller status required, for example).
+> The buyer may set a mandatory requirement for specific named software which in its entirety is licensed under one or more licences approved by the Open Source Initiative (OSI), is free and open for all suppliers to use (no reseller status required, for example).
 >
 > The buyer may set mandatory requirements for standards if the standard meets the open-standard criteria of SOU 2009:86.
+
+## A. Preparation — needs and requirements
+
+- [ ] **MUST**: Open source has been considered as the first choice. If another option is chosen, a documented justification exists — applies both when proprietary software is chosen instead and when open source is not appropriate or possible (deviation decision). Suitable grounds: functional, technical, security or financial reasons.
+- [ ] **SHOULD**: Digg's [Swedish framework for digital interaction](https://www.digg.se/kunskap-och-stod/svenskt-ramverk-for-digital-samverkan) (in Swedish) and the [Interoperability Regulation (EU) 2024/903](https://eur-lex.europa.eu/eli/reg/2024/903/oj) have been consulted for open standards and interoperability.
+
+## B. Basic evaluation of candidate projects
+
+The project chosen should have undergone a basic evaluation — particularly with regard to project health (is it active and well-maintained?), security (does the project demonstrate good security practices?) and licence terms (are they compatible with your purposes?). The points below are starting points, not an exhaustive review.
+
+- [ ] **MUST**: The project is updated regularly ([commits/code changes, releases, issues](../../glossary/)).
+- [ ] **MUST**: There is a clear primary actor or organisation behind the project.
+- [ ] **MUST**: Bug reports and improvement suggestions are handled within a reasonable time.
+- [ ] **MUST**: The licence is identified, OSI-approved and compatible with how the organisation intends to use the software (operation, modification, possibly own publication). See [Licensing](../licensing/).
+- [ ] **MUST**: The project demonstrates good security practices. Examples (not all required): documented security handling (the `SECURITY.md` file, vulnerability policy), an SBOM (composition), release signatures (authenticity), a clear support window (how long it is security-updated), or a health assessment such as [OpenSSF Scorecard](https://scorecard.dev/) or equivalent.
+- [ ] **MUST**: The "as is" terms of the software and the organisation's quality and risk responsibility are understood. Open source software is provided without warranty; responsibility for operation and quality rests with the user.
+- [ ] **SHOULD**: There is an active community around the project.
+- [ ] **SHOULD**: It is clear how to contribute (the `CONTRIBUTING.md` file, governance, code review).
+
+## C. Further support
+
+- [Kammarkollegiet's guidance for call-offs from *Software and Services*](https://www.avropa.se/globalassets/bilagor/1.-aktuella-rao/programvaror-och-tjanster/avropsstod-samtl-delomraden/vagledning-programvaror--och-tjanster.pdf) (in Swedish): general call-off support; refers to the Requirements catalogue and other agreement documents.
+- Inköpsrådet's article series on procurement and open source (four parts, in Swedish):
+  - Part 1: [Share costs and avoid lock-in](https://inkopsradet.se/upphandling/dela-kostnader-och-undvik-inlasningar/)
+  - Part 2: [Find open source that meets the requirements](https://inkopsradet.se/upphandling/hitta-oppen-kallkod-som-klarar-kraven/)
+  - Part 3: [Developed and stewarded together](https://inkopsradet.se/utvecklas-och-forvaltas-tillsammans/)
+  - Part 4: [Avoid lock-in in IT procurement](https://inkopsradet.se/undvik-inlasning-vid-it-upphandling/)
+- [NOSAD: guidance on procurement of open source](https://nosad.se/upphandling-oss) (in Swedish).

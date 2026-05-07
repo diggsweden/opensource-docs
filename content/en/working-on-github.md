@@ -32,8 +32,8 @@ That is where work happens around different projects, together with external con
 
 You first need a [GitHub account](https://github.com/signup).
 
-* You should add your `name@digg.se` address to your existing GitHub account if you already have one. That is the simplest path, and personal contributions to open-source projects are not a problem from Digg's perspective. If you prefer to keep work and personal activity separate for privacy reasons, creating a dedicated account for your Digg role is also fine.
-* Bear in mind that your account is partly public and may be linked to Digg, which means you are expected to conduct yourself professionally and in a way befitting a public agency on the account linked to your `name@digg.se` address.
+* You should add your `name@digg.se` address to your existing GitHub account if you already have one. That is the simplest path, and personal contributions to open-source projects are not a problem from Digg's perspective. If you want to keep work and personal activity entirely separate on GitHub — for privacy and clarity — you can create a separate account for your professional role with us.
+* Bear in mind that your account is partly public — outsiders who see your activity there may perceive you as a representative of us. You are therefore expected to conduct yourself professionally and in a way befitting a public agency on the account linked to your `name@digg.se` address.
 * Whatever username you have, also fill in your real name (GitHub → Edit Profile → Name).
 
 ### Basic security for your GitHub account
@@ -48,9 +48,9 @@ Also enable "[Vigilant Mode](https://docs.github.com/en/authentication/managing-
 
 ### Adding a user to DiggSweden
 
-You need to join Digg's GitHub organisation and be added to one or more [Teams](../glossary/) (GitHub's term for a group of users inside the organisation).
+If you only contribute occasionally to public projects, the role [External Collaborator](../reference/github-roles/) is recommended. If you work in the organisation daily — and sometimes also with private projects — you instead need to join our GitHub organisation and be added to one or more [Teams](../glossary/) (GitHub's term for a group of users inside the organisation). As a rule of thumb, employees join the organisation while consultants are mainly External Collaborators.
 
-The invitation comes from someone with the [Owner or Admin role](../reference/github-roles/) — in most cases through a project or consultant team you are already part of. If you don't know who has that role for your team, [contact OSPO](mailto:ospo@digg.se) — state your purpose and what you need, and they will help from there.
+Whichever role you are assigned here, the invitation comes from someone with the [Owner or Admin](../reference/github-roles/) role — in most cases through a project or consultant team you are already part of. If you don't know who has that role for your team, [contact OSPO](mailto:ospo@digg.se) — state your purpose and what you need, and they will help from there.
 
 ## Base settings and template project
 
@@ -62,9 +62,9 @@ One is inherited automatically, the other you choose actively.
 All repositories on DiggSweden inherit a default set of templates for bug reports, feature requests and pull requests from [`diggsweden/.github`](https://github.com/diggsweden/.github).
 The templates are active from the first commit, and the repository can then adapt them to the project's needs.
 
-### Template project for new open projects
+### Template project for creating or publishing new open projects
 
-To make it easy to get started with a new open-source project, Digg provides a [Template project for open source software](../project-template/) with community files, REUSE licensing, OpenSSF Scorecard and more. The template's files are copied into the new repository and adapted to the project's needs.
+If you are creating a new open project — or publishing an existing internal project openly — we have a [Template project for open source software](../project-template/) with community files, REUSE licensing, OpenSSF Scorecard and more. The template's files are copied into the new repository and adapted to the project's needs.
 
 ## Stewardship and lifecycle management
 
@@ -73,9 +73,9 @@ To make it easy to get started with a new open-source project, Digg provides a [
 The team that owns a repository has primary responsibility for responding to issues.
 How the team organises that work in detail is up to the team.
 
-Digg's GitHub and project spaces are primarily intended for project-focused issues.
+Remember that our GitHub and project spaces are primarily intended for project-focused issues.
 Discussions that do not relate to a project directly should be steered to other spaces.
-Questions that are not technical or do not concern a specific project are referred onward to [Digg's customer service](https://www.digg.se/om-oss/kontakta-oss) (`info@digg.se`).
+Questions that are not technical or do not concern a specific project are referred to [our customer service](https://www.digg.se/om-oss/kontakta-oss) (`info@digg.se`).
 
 {{< callout type="info" >}}
 Digg is a public agency and the public expects us to answer politely, correctly and within a reasonable time.
@@ -96,11 +96,13 @@ Projects without maintainers count as inactive and must be archived — ideally 
 
 Inactivity is judged on a yearly basis. Inactivity means the project has no commits, issue updates or other visible activity.
 
+To identify maintainers from the start, a `CODEOWNERS` file is recommended — it complements the README and ensures the right person automatically receives review requests. See the [Release preparation](../checklists/release-preparation/) checklist.
+
 ## Vulnerability and security
 
-GitHub provides several built-in tools for automated vulnerability and security scanning. Digg, however, prefers vendor-neutral tools where possible — for example, [Renovate](https://docs.renovatebot.com/) for dependency monitoring and [Opengrep](https://opengrep.dev/) for static code analysis. GitHub-native features such as secret scanning are used where they fit better.
+GitHub provides several built-in tools for automated vulnerability and security scanning. We, however, prefer vendor-neutral tools where possible — for example, [Renovate](https://docs.renovatebot.com/) for dependency monitoring and [Opengrep](https://opengrep.dev/) for static code analysis. GitHub-specific features such as secret scanning are used where they fit better. The reasoning behind the platform-neutrality is that we should be able to work in similar ways on other code-collaboration platforms — for example [GitLab](https://about.gitlab.com/) or [Forgejo](https://forgejo.org/) — without having to rebuild the toolchain.
 
-Which features are enabled at organisation level is listed in [Reference: Default GitHub settings](../reference/default-github-settings/). Defaults may need fine-tuning by the team.
+A selection of the security features enabled at organisation level is listed in [Reference: Default GitHub settings](../reference/default-github-settings/) — the list is deliberately not exhaustive. Defaults may need fine-tuning by the team.
 
 When a security alert comes in, the team that owns the repository has primary responsibility to address it.
 
@@ -129,29 +131,18 @@ For Java/Kotlin libraries.
 
 Digg owns two namespaces on Maven Central Portal: [`se.digg`](https://central.sonatype.com/search?namespace=se.digg) and [`se.swedenconnect`](https://central.sonatype.com/search?namespace=se.swedenconnect).
 
+Use `SNAPSHOT` releases until you are entirely sure you want to publish a production release. What is published on Maven Central Portal and is not `SNAPSHOT` cannot be removed, except in very special cases.
+
 ### Package registry: [GitHub Container and Package Registry](https://github.com/features/packages)
 
-* GitHub Packages is intended for development, not production releases. Access requires a GitHub token, among other things, which does not work well in Digg's environments. Therefore also publish on Maven Central Portal.
-* What is published on Maven Central Portal and is not `SNAPSHOT` cannot be removed, except in very special cases.
+* GitHub Packages is intended for development, not production releases. Access requires a GitHub token, among other things, which becomes cumbersome at larger scale — every user always needs a token. Therefore also publish on Maven Central Portal.
 * For container images: prefer small, secure base containers (e.g. distroless, Wolfi or Chainguard).
 
 ### Release bot, CI flow and available variables
 
 Most newer projects on DiggSweden now use this setup — a release bot together with reusable workflows and configured secrets. We recommend it if you want many of the baseline requirements from the [checklists](../checklists/) covered out of the box: secure signing, dependency checks, licensing and project-health indicators are part of the default, and individual developers do not have to handle keys or become person-dependencies in the flow. The bot can sign and commit releases in a CI flow triggered by a tag push.
 
-For DiggSweden:
-
-* [DiggSwedenBot](https://github.com/diggswedenbot)
-
-#### Secrets and variables
-
-An up-to-date list of secrets and variables configured for Digg projects — and what each is used for — lives in [reusable-ci/docs/reference.md](https://github.com/diggsweden/reusable-ci/blob/main/docs/reference.md).
-
-Secrets are not set by default but are made available per project.
-
-#### Reusable CI components
-
-Lints, security scans, signing, package publishing and more are available as ready-made building blocks. An up-to-date list with a description of each component lives in [reusable-ci/docs/components.md](https://github.com/diggsweden/reusable-ci/blob/main/docs/components.md).
+For DiggSweden everything is gathered in [diggsweden/reusable-ci](https://github.com/diggsweden/reusable-ci) — lints, security scans, signing, package publishing and more. See [the component list](https://github.com/diggsweden/reusable-ci/blob/main/docs/components.md) for a current overview.
 
 For a practical example of a release pipeline that uses them, see [`diggsweden/cose-lib`](https://github.com/diggsweden/cose-lib/tree/main/.github/workflows).
 
@@ -165,7 +156,7 @@ For a practical example of a release pipeline that uses them, see [`diggsweden/c
 
 * **Do I have to create a GitHub team?**
 
-  No. For cost reasons, not everyone who contributes needs to be in a team in the organisation. If the project is public, it can be enough that one or two maintainers approve external pull requests, just as in any other open source project.
+  No. For cost reasons, not everyone who contributes needs to be in a team in the organisation. If the project is public, it can be enough that one or two maintainers approve external pull requests, just as in any other open source project. You can also be assigned the [External Collaborator](../reference/github-roles/) role.
 
 * **How should teams be divided: per product, per consultancy, or how?**
 
@@ -173,11 +164,11 @@ For a practical example of a release pipeline that uses them, see [`diggsweden/c
 
 * **A team gets access to one or more repositories. What rights should they have by default?**
 
-  No security-cleared people are part of a team, so a repository team's write rights must be `Read`. The team admin then grants individual members the rights they need (`Write`, `Maintainer` etc.) where required.
+  Since teams may include external collaborators (consultants and contributors), members are not considered security-cleared. The default rights for a repository team must therefore be `Read`. The team admin then grants individual members the rights they need (`Write`, `Maintainer` etc.) where required.
 
 * **I want to fork an external project. Should I do it under Digg's GitHub organisation or under my private user?**
 
-  In most cases: no fork under the Digg organisation. Fork under your own user in the first instance. We do not want DiggSweden to be perceived as having taken on the stewardship of a fork of an external project. Forks placed under the organisation without prior discussion will be archived.
+  In most cases: no fork under our GitHub organisation. Fork under your own user in the first instance. We do not want DiggSweden to be perceived as having taken on the stewardship of a fork of an external project. There are exceptions, though — for example, when a team needs a shared working copy under the organisation in order to contribute back upstream (shared PR flows, longer collaborations). In that case, check with [OSPO](mailto:ospo@digg.se) or an Owner first. Forks placed under the organisation without prior discussion will be archived.
 
 ### Schrems II and GDPR
 
@@ -191,7 +182,7 @@ For a practical example of a release pipeline that uses them, see [`diggsweden/c
 
   Yes. For practical steps, see the [Upstream contribution](../checklists/upstream-contribution/) checklist — it covers policy check, licence choice, CLA/DCO, communication and escalation.
 
-  In practice, this already happens at times: Digg contributes to open source and open data through procurements and collaborations with external partners where we encourage and require open source.
+  In practice, we already contribute actively to open source and open data today — both directly and through procurements and collaborations where we encourage and require open source from external partners.
 
 ### Licence headers (REUSE/SPDX)
 
@@ -212,7 +203,7 @@ For a practical example of a release pipeline that uses them, see [`diggsweden/c
 * **Why are there private projects on Digg's GitHub? Is it not a platform for open source software?**
 
   There are several reasons why a project may need to be private for a phase: ownership is not settled, we have not decided whether an older project from another organisation should become open source, or we need to quality-assure the project before publishing it openly.
-  The premise is still that private projects should primarily be collaborated on in more suitable (closed, more secure) spaces. Only in exceptional cases, and as a deliberate choice, should they live on GitHub.
+  The starting point is still that private projects should primarily be collaborated on in more suitable (closed, more secure) spaces. Only in exceptional cases, and as a deliberate choice, should they live on GitHub.
 
 * **I just have more questions. Where do I turn?**
 

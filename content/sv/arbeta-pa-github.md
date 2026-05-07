@@ -34,8 +34,8 @@ Där sker arbete kring olika projekt, tillsammans med externa konsulter, bidrags
 
 Du behöver först skaffa ett [GitHub-konto](https://github.com/signup).
 
-* Du bör lägga till din `namn@digg.se`-adress på ditt befintliga GitHub-konto om du redan har ett. Det är enklast, och egna bidrag till öppna projekt är inget problem för Diggs del. Vill du av integritetsskäl hålla isär jobb och privat går det också bra att skapa ett separat konto för din Digg-roll.
-* Tänk på att ditt konto är delvis offentligt och kan komma att kopplas till Digg, vilket innebär att du förväntas uppträda professionellt och myndighetsmässigt på det konto som är kopplat till din `namn@digg.se`-adress.
+* Du bör lägga till din `namn@digg.se`-adress på ditt befintliga GitHub-konto om du redan har ett. Det är enklast, och egna bidrag till öppna projekt är inget problem för Diggs del. Vill du av integritets- och tydlighetsskäl helt hålla isär jobb och privat på GitHub kan du skapa ett separat konto för din yrkesroll hos oss.
+* Tänk på att ditt konto är delvis offentligt — utomstående som ser din aktivitet där kan uppfatta dig som representant för oss. Du förväntas därför uppträda professionellt och myndighetsmässigt på det konto som är kopplat till din `namn@digg.se`-adress.
 * Oavsett vilket användarnamn du har, fyll också i ditt riktiga namn (GitHub → Edit Profile → Name).
 
 ### Grundläggande säkerhet för ditt GitHub-konto
@@ -50,9 +50,9 @@ Aktivera även "[Vigilant Mode](https://docs.github.com/en/authentication/managi
 
 ### Att lägga till en användare till DiggSweden
 
-Du behöver gå med i Diggs GitHub-organisation och bli tillagd i ett eller flera [Team](../terminologi/) (GitHubs benämning för en grupp användare i organisationen).
+Om du bara ibland ska bidra till publika projekt rekommenderas rollen [External Collaborator](../referens/github-roller/). Arbetar du dagligen i organisationen — och ibland även med privata projekt — behöver du istället gå med i vår GitHub-organisation och bli tillagd i ett eller flera [Team](../terminologi/) (GitHubs benämning på en grupp användare i organisationen). Som tumregel går anställda med i organisationen, medan konsulter främst är External Collaborators.
 
-Inbjudan kommer från någon med [Owner- eller Admin-roll](../referens/github-roller/) — i de flesta fall via ett projekt- eller konsultteam som du redan ingår i. Om du inte vet vem som har den rollen för ditt team, [kontakta OSPO](mailto:ospo@digg.se) — ange ditt syfte och vad du behöver, så hjälper de dig vidare.
+Oavsett vilken roll du tilldelas här kommer inbjudan från någon med rollen [Owner eller Admin](../referens/github-roller/) — i de flesta fall via ett projekt- eller konsultteam som du redan ingår i. Om du inte vet vem som har den rollen för ditt team, [kontakta OSPO](mailto:ospo@digg.se) — ange ditt syfte och vad du behöver, så hjälper de dig vidare.
 
 ## Basinställningar och mallprojekt
 
@@ -64,9 +64,9 @@ Det ena ärvs automatiskt, det andra väljer du aktivt.
 Alla kodförråd på DiggSweden ärver som grundinställning en uppsättning mallar för felrapporter, funktionsförslag och ändringsförfrågningar från [`diggsweden/.github`](https://github.com/diggsweden/.github).
 Mallarna är aktiva från första incheckningen, och kodförrådet kan sedan anpassa dem efter projektets behov.
 
-### Mallprojekt för nya öppna projekt
+### Mallprojekt för att skapa eller publicera nya öppna projekt
 
-För att enkelt komma igång med ett nytt öppen källkod-projekt tillhandahåller Digg ett [Mallprojekt för öppen programvara](../projektmall/) med gemenskapsfiler, REUSE-licensiering, OpenSSF Scorecard med mera. Mallens filer kopieras in i det nya kodförrådet och anpassas efter projektets behov.
+Ska du skapa ett nytt öppet projekt — eller publicera ett befintligt internt projekt öppet — har vi ett [Mallprojekt för öppen programvara](../projektmall/) med gemenskapsfiler, REUSE-licensiering, OpenSSF Scorecard med mera. Mallens filer kopieras in i det nya kodförrådet och anpassas efter projektets behov.
 
 ## Förvaltning och livscykelhantering
 
@@ -75,9 +75,9 @@ För att enkelt komma igång med ett nytt öppen källkod-projekt tillhandahåll
 Teamet som äger ett kodförråd har förstahandsansvaret för att svara på ärenden.
 Hur teamet lägger upp det arbetet i detalj är upp till teamet.
 
-Diggs GitHub och projektytor är primärt avsedda för projektfokuserade ärenden.
+Kom ihåg att våra GitHub- och projektytor primärt är avsedda för projektfokuserade ärenden.
 Diskussioner som inte rör ett projekt direkt ska styras vidare till andra ytor.
-Frågor som inte är tekniska eller inte rör ett specifikt projekt hänvisas vidare till [Diggs kundservice](https://www.digg.se/om-oss/kontakta-oss) (`info@digg.se`).
+Frågor som inte är tekniska eller inte rör ett specifikt projekt hänvisas till [vår kundservice](https://www.digg.se/om-oss/kontakta-oss) (`info@digg.se`).
 
 {{< callout type="info" >}}
 Digg är en myndighet och förväntas av allmänheten besvara vänligt, korrekt och inom rimlig tid.
@@ -98,11 +98,13 @@ Projekt som saknar underhållsansvariga räknas som inaktiva och ska arkiveras �
 
 Inaktivitet bedöms på årsbasis. Med inaktivitet menas att projektet inte har några incheckningar, ärendeuppdateringar eller annan synlig aktivitet.
 
+För att redan från start peka ut underhållsansvariga rekommenderas en `CODEOWNERS`-fil — den används som komplement till README och gör att rätt person automatiskt får granskningsförfrågan. Se checklistan [Förberedelse inför publicering](../checklistor/publicering-forvaltning/).
+
 ## Sårbarhet och säkerhet
 
-GitHub erbjuder flera inbyggda verktyg för automatiserad sårbarhets- och säkerhetsskanning. Digg strävar dock i första hand efter plattformsoberoende verktyg när det går — t.ex. [Renovate](https://docs.renovatebot.com/) för beroendebevakning och [Opengrep](https://opengrep.dev/) för statisk kodanalys. GitHub-native funktioner som hemlighetsscanning används där de passar bättre.
+GitHub erbjuder flera inbyggda verktyg för automatiserad sårbarhets- och säkerhetsskanning. Vi strävar dock i första hand efter plattformsoberoende verktyg när det går — t.ex. [Renovate](https://docs.renovatebot.com/) för beroendebevakning och [Opengrep](https://opengrep.dev/) för statisk kodanalys. GitHub-specifika funktioner som hemlighetsscanning används där de passar bättre. Tanken med plattformsoberoendet är att vi ska kunna arbeta på liknande sätt även på andra kodsamverkansplattformar — exempelvis [GitLab](https://about.gitlab.com/) eller [Forgejo](https://forgejo.org/) — utan att behöva bygga om verktygskedjan.
 
-Vilka funktioner som är aktiverade på organisationsnivå listas i [Referens: Förvalda GitHub-inställningar](../referens/forvalda-github-installningar/). Förinställningarna kan behöva finjusteras av teamet.
+Ett urval av de säkerhetsfunktioner som är aktiverade på organisationsnivå listas i [Referens: Förvalda GitHub-inställningar](../referens/forvalda-github-installningar/) — listan är medvetet inte fullständig. Förinställningarna kan behöva finjusteras av teamet.
 
 När en säkerhetsvarning kommer in är det teamet som äger kodförrådet som har förstahandsansvaret att åtgärda.
 
@@ -131,31 +133,20 @@ För Java/Kotlin-bibliotek.
 
 Digg äger två namespace på Maven Central Portal: [`se.digg`](https://central.sonatype.com/search?namespace=se.digg) och [`se.swedenconnect`](https://central.sonatype.com/search?namespace=se.swedenconnect).
 
+Använd `SNAPSHOT`-utgåvor tills du är helt säker på att du vill släppa en skarp version. Det som publiceras på Maven Central Portal och inte är `SNAPSHOT` går nämligen inte att ta bort, utom i mycket speciella fall.
+
 ### Paketarkiv: [GitHub Container och Package Registry](https://github.com/features/packages)
 
 * GitHub Packages är avsett för utveckling, inte skarpa utgåvor.
-  Åtkomst kräver bland annat en GitHub-token, vilket inte fungerar bra i Diggs miljöer.
+  Åtkomst kräver bland annat en GitHub-token, vilket gör det krångligt att använda i större skala — varje användare behöver alltid en token.
   Publicera därför också på Maven Central Portal.
-* Det som publiceras på Maven Central Portal och inte är `SNAPSHOT` går inte att ta bort, utom i mycket speciella fall.
 * För container-avbildningar: föredra små säkra bascontainrar (t.ex. distroless, Wolfi eller Chainguard).
 
 ### Release-bot, CI-flöde och tillgängliga variabler
 
 Numera använder de flesta nyare projekt på DiggSweden den här lösningen — en Release-bot tillsammans med återanvändbara workflows och konfigurerade secrets. Vi rekommenderar den om du vill få många av grundkraven från [checklistorna](../checklistor/) uppfyllda direkt: säker signering, beroendekontroll, licensiering och projekthälsoindikatorer ingår i basuppsättningen, och enskilda utvecklare slipper hantera nycklar eller bli personberoenden i flödet. Boten kan signera och checka in utgåvor i ett CI-flöde som triggas av en tag-push.
 
-För DiggSweden:
-
-* [DiggSwedenBot](https://github.com/diggswedenbot)
-
-#### Secrets och variabler
-
-En aktuell lista över secrets och variabler som finns konfigurerade för Digg-projekt — och vad var och en används till — finns i [reusable-ci/docs/reference.md](https://github.com/diggsweden/reusable-ci/blob/main/docs/reference.md).
-
-Secrets sätts inte som standard utan görs tillgängliga per projekt.
-
-#### Återanvändbara CI-komponenter
-
-Lints, säkerhetsscans, signering, paketpublicering med mera finns som färdiga byggblock. En aktuell lista och beskrivning av varje komponent finns i [reusable-ci/docs/components.md](https://github.com/diggsweden/reusable-ci/blob/main/docs/components.md).
+För DiggSweden samlas allt i [diggsweden/reusable-ci](https://github.com/diggsweden/reusable-ci) — lints, säkerhetsscans, signering, paketpublicering med mera. Se [komponentlistan](https://github.com/diggsweden/reusable-ci/blob/main/docs/components.md) för en aktuell översikt.
 
 För ett praktiskt exempel på en release-pipeline som använder dem, se [`diggsweden/cose-lib`](https://github.com/diggsweden/cose-lib/tree/main/.github/workflows).
 
@@ -172,6 +163,7 @@ För ett praktiskt exempel på en release-pipeline som använder dem, se [`diggs
   Nej.
   Av kostnadsskäl behöver inte alla som bidrar vara med i ett team i organisationen.
   Är projektet publikt kan det räcka att en eller två underhållsansvariga godkänner ändringsförfrågningar utifrån, på samma sätt som i ett vanligt öppet projekt.
+  Du kan också få rollen [External Collaborator](../referens/github-roller/).
 
 * **Hur ska team delas in: per produkt, per konsultgrupp, eller hur?**
 
@@ -182,13 +174,14 @@ För ett praktiskt exempel på en release-pipeline som använder dem, se [`diggs
 
 * **Ett team får tillgång till ett eller flera kodförråd. Vilka rättigheter ska de ha som standard?**
 
-  Det förekommer inte säkerhetsklassade personer i ett team, så ett kodförrådsteams skrivrättigheter ska vara `Read/Läs`.
+  Eftersom team kan inkludera externa samarbetspartners (konsulter och bidragsgivare) räknas inte medlemmarna som säkerhetsklassade. Standardrättigheten för ett kodförrådsteam ska därför vara `Read/Läs`.
   Admin för teamet ger sedan vid behov enskilda medlemmar de rättigheter som krävs (`Write`, `Maintainer` etc.).
 
 * **Jag vill avgrena ett externt projekt. Ska jag göra det under Diggs GitHub-organisation eller under min privata användare?**
 
-  I de flesta fall: nej till avgrening under Digg-organisationen. Avgrena under din egen användare i första hand.
+  I de flesta fall: nej till avgrening under vår GitHub-organisation. Avgrena under din egen användare i första hand.
   Vi vill inte att DiggSweden ska uppfattas som att vi har tagit på oss att förvalta en avgrening av ett externt projekt.
+  Det finns dock undantag — t.ex. när ett team behöver en gemensam arbetskopia under organisationen för att kunna bidra tillbaka uppströms (delade PR-flöden, längre samarbeten). Stäm i så fall av med [OSPO](mailto:ospo@digg.se) eller en Owner innan.
   Avgreningar som ligger under organisationen utan att ha diskuterats i förväg kommer att arkiveras.
 
 ### Schrems II och GDPR
@@ -204,7 +197,7 @@ För ett praktiskt exempel på en release-pipeline som använder dem, se [`diggs
 
   Ja. För praktiska steg, se checklistan [Bidrag uppströms](../checklistor/bidrag-uppstrom/) — den täcker policy-koll, licensval, CLA/DCO, kommunikation och eskalering.
 
-  I praktiken sker det redan att Digg ibland bidrar aktivt till öppen programvara och öppna data genom upphandlingar och samarbeten med externa partners där vi uppmuntrar och kräver öppen programvara.
+  I praktiken bidrar vi redan i dag aktivt till öppen programvara och öppna data — både direkt och genom upphandlingar och samarbeten där vi uppmuntrar och kräver öppen programvara av externa partners.
 
 ### Licens-headrar (REUSE/SPDX)
 
@@ -225,7 +218,7 @@ För ett praktiskt exempel på en release-pipeline som använder dem, se [`diggs
 * **Varför finns privata projekt på Diggs GitHub? Är det inte en plattform för öppen programvara?**
 
   Det finns flera skäl till att projekt kan behöva vara privata under en fas: ägarskapet är inte klart, vi har inte beslutat om ett äldre projekt från en annan organisation ska bli öppen programvara, eller vi behöver kvalitetssäkra projektet innan det publiceras öppet.
-  Premissen är ändå att privata projekt i första hand ska samarbetas om på lämpligare (stängda, säkrare) ytor. Bara i undantagsfall, och som ett medvetet val, ska de ligga på GitHub.
+  Utgångspunkten är ändå att privata projekt i första hand ska samarbetas om på lämpligare (stängda, säkrare) ytor. Bara i undantagsfall, och som ett medvetet val, ska de ligga på GitHub.
 
 * **Jag har bara fler frågor. Vart vänder jag mig?**
 

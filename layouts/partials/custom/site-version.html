@@ -1,0 +1,8 @@
+{{/*
+  SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+  SPDX-License-Identifier: CC0-1.0
+
+  Shared user-facing site version string.
+*/}}
+{{- $linkClass := .linkClass | default "" -}}
+{{- now.Format "2006-01-02" -}}{{- with hugo.CommitHash -}}-<a href="https://github.com/diggsweden/opensource-docs/commit/{{ . }}"{{ with $linkClass }} class="{{ . }}"{{ end }}>{{ substr . 0 7 }}</a>{{- end -}}

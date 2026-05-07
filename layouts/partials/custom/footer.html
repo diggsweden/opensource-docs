@@ -29,5 +29,8 @@
     {{ $licPrefix }}
     <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="hx:underline hx:hover:text-gray-700 hx:dark:hover:text-gray-300">CC0-1.0</a>.
     <a href="https://github.com/diggsweden/opensource-docs" class="hx:underline hx:hover:text-gray-700 hx:dark:hover:text-gray-300">{{ $srcLinkText }}</a> {{ $srcLinkSuf }}
+    <div class="hx:text-[10px] hx:text-gray-400 hx:dark:text-gray-600 hx:mt-1">
+      Version: {{ partial "custom/site-version.html" (dict "linkClass" "hx:underline hx:hover:text-gray-600 hx:dark:hover:text-gray-400") }}
+    </div>
   </div>
 </div>

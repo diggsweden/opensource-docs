@@ -1,37 +1,36 @@
 ---
 title: "Release 1.0.0"
-description: "Checklist for technical and operational requirements for a stable 1.0 release"
+description: "Final check for documentation, CI, security and release requirements before a stable 1.0 release"
 weight: 80
 ---
 
-**Purpose:** Ensure that the project meets all the technical and operational requirements for a stable 1.0 release.
+**Purpose:** Ensure that the project is ready to call its next stable release 1.0.0.
 
-**Prerequisite:** This checklist is a continuation and deepening of [Release preparation](../release-preparation/).
-The basic requirements there MUST be met before work on a 1.0 release begins.
+**Before you start:** First work through [Release preparation](../release-preparation/).
+That checklist covers the baseline requirements for publishing and maintaining a project openly: decisions, responsibilities, licensing, baseline documentation, public issue handling, REUSE, `publiccode.yml` and basic release practice.
 
-## A. Documentation
+**Fastest route:** For new projects, or internal projects that are being opened up, consider starting from the [Template project for open source software](../../project-template/).
+The template helps with standard files, REUSE support, `publiccode.yml`, issue/PR templates and basic CI structure.
+The template does not replace the checklists; always verify that content, contact routes and workflows are adapted to the actual project.
 
-- [ ] **MUST**: `README.md` (the project's front page) contains:
-  - Badges (version, OpenSSF Scorecard, licence, REUSE status)
-  - Project description and goals
-  - Installation instructions
-  - Usage examples
-  - Maintainer section (see [Release preparation](../release-preparation/))
-  - Maturity level (alpha/beta/stable)
-- [ ] **MUST**: `LICENSE`. The licence file at the repository root, declaring the terms under which the code is shared.
-- [ ] **MUST**: `SECURITY.md`. Reporting route and contact for vulnerabilities. See [Security](../security/).
-- [ ] **MUST**: `CONTRIBUTING.md`. Describes how externals can contribute (process, conventions, tests).
-- [ ] **MUST**: `CODE_OF_CONDUCT.md`. Sets the social ground rules for the community.
-- [ ] **MUST**: `CHANGELOG.md`. Human-readable record of changes between releases (Keep-a-Changelog format).
-- [ ] **MUST**: `publiccode.yml`. Standardised metadata file that makes the project discoverable in public-sector catalogues.
-- [ ] **MUST**: `docs/DEVELOPMENT.md`. How to set up a development environment and build the project locally.
-- [ ] **MUST**: Verification instructions for release integrity. How users can check signatures and hashes for a downloaded release.
-- [ ] **SHOULD**: Examples in the documentation. Concrete usage samples beyond the README quick-start.
+This checklist focuses on what is added before a stable 1.0.0 release.
+
+## A. Documentation and template adaptation
+
+- [ ] **MUST**: The baseline requirements in [Release preparation](../release-preparation/) are met.
+- [ ] **MUST**: Standard files and metadata are in place and adapted for the project, not just copied from a template. This includes, for example, `README.md`, `LICENSE`, `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `CHANGELOG.md` and `publiccode.yml`.
+- [ ] **MUST**: If the [Template project for open source software](../../project-template/) has been used, placeholders have been replaced, irrelevant sections removed and workflows adapted to the project's language, build system and publication flow.
+- [ ] **MUST**: `README.md` shows that the project is ready for stable use: description and goals, installation instructions, usage examples, maintainers, maturity level and relevant badges.
+- [ ] **MUST**: Developer documentation is current. It must be possible to set up the development environment, build the project and run the same baseline checks locally as in CI.
+- [ ] **MUST**: Verification instructions for release integrity are published. Users must be able to check signatures, hashes and other attestations for a downloaded release.
+- [ ] **SHOULD**: The documentation contains concrete examples or scenarios beyond the README quick-start.
 
 ## B. Legal and compliance
 
-- [ ] **MUST**: REUSE compliance (SPDX headers in all source files). Per-file licence and copyright marking. See [Licensing](../licensing/).
-- [ ] **MUST**: Licence compatibility verified. Dependency licences are mutually compatible and do not force the project's main licence.
+- [ ] **MUST**: REUSE compliance is verified (SPDX headers in all source files). Per-file licence and copyright marking is in place. See [Licensing](../licensing/).
+- [ ] **MUST**: Clear copyright notices (year, organisation, co-authors as relevant).
+- [ ] **MUST**: A `NOTICE` file is present where required (e.g. for Apache 2.0 with third-party attribution).
+- [ ] **MUST**: Licence compatibility verified. Dependency licences are mutually compatible and do not force the project's main licence. Tool: [Joinup Licence Compatibility Checker](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant).
 - [ ] **MUST**: Name/trademark check carried out. The project name does not clash with existing software or trademarks.
 - [ ] **MUST**: No SNAPSHOT dependencies. All dependencies pin to released versions, not in-progress builds.
 
@@ -43,17 +42,12 @@ The basic requirements there MUST be met before work on a 1.0 release begins.
 
 ## D. CI/CD and security
 
-- [ ] **MUST**: CI workflow for pull requests (PR/MR). Tests, linters and checks run automatically on every proposed change.
-- [ ] **MUST**: Test CI workflow. The full test suite runs on commits to main and on tagged releases.
-- [ ] **MUST**: Release CI workflow. Tag push triggers a pipeline that builds, signs and publishes the release artefacts.
-- [ ] **MUST**: Branch protection. The release branch is protected against direct push and unreviewed merge. See [Working on a code-collaboration platform](../platform/).
-- [ ] **MUST**: Vulnerability scanning of dependencies (SCA). Detects known vulnerabilities and licence problems in third-party components. See [Security](../security/).
-- [ ] **MUST**: SAST in CI. Static analysis of source code for vulnerability patterns. See [Security](../security/).
-- [ ] **MUST**: Linter configured. Code style and common errors are checked automatically on every change.
-- [ ] **MUST**: Secret scanning enabled. The repository is scanned for accidentally committed credentials, tokens and keys.
-- [ ] **MUST**: Release signing configured (Sigstore/cosign recommended). Each release is cryptographically signed so users can verify origin. See [Security](../security/).
-- [ ] **MUST**: SBOM generation (SPDX 2.3 or CycloneDX 1.5) **delivered with every release**. A machine-readable list of components lets consumers track vulnerabilities and licences. See [Security](../security/).
-- [ ] **MUST**: CI linter and checks can be run locally without CI. Developers can reproduce the same checks on their own machine before pushing.
+- [ ] **MUST**: CI for pull requests, the main branch and tagged releases runs relevant tests, linters and quality checks automatically.
+- [ ] **MUST**: Release CI is verified. A tag push triggers a flow that builds, signs and publishes the release artefacts.
+- [ ] **MUST**: Branch protection and required status checks protect main and release branches against direct push and unreviewed merge. See [Working on a code-collaboration platform](../platform/).
+- [ ] **MUST**: The security controls in [Security](../security/) are configured for the project: vulnerability scanning of dependencies (SCA), SAST, secret scanning, release signing and SBOM.
+- [ ] **MUST**: SBOM (SPDX 2.3 or CycloneDX 1.5) is **delivered with every release**. A machine-readable list of components lets consumers track vulnerabilities and licences.
+- [ ] **MUST**: CI linters and baseline checks can be run locally without CI. Developers can reproduce the same checks on their own machine before pushing.
 - [ ] **SHOULD**: Changelog flow in CI. Automatic generation from Conventional Commits keeps the changelog in sync with code.
 - [ ] **SHOULD**: Security review carried out and documented. An internal or external review of the codebase from a security perspective.
 - [ ] **SHOULD**: OpenSSF Scorecard integration. Scorecard runs in CI and the result is published as a badge for transparency.
@@ -70,8 +64,8 @@ The basic requirements there MUST be met before work on a 1.0 release begins.
 
 ## F. Development practice
 
-- [ ] **SHOULD**: Issue templates configured. Standard issue forms guide reporters to provide useful information.
-- [ ] **SHOULD**: Pull-request template configured. PR descriptions follow a consistent structure (problem, fix, test plan).
+- [ ] **SHOULD**: Issue templates are configured and adapted to the project. Standard issue forms guide reporters to provide useful information.
+- [ ] **SHOULD**: Pull-request template is configured and adapted to the project. PR descriptions follow a consistent structure (problem, fix, test plan).
 
 ## G. Stack-specific requirements (where applicable)
 

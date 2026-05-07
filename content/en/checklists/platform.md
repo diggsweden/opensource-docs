@@ -12,6 +12,9 @@ weight: 50
 - [ ] **MUST**: The name follows the agreed naming convention.
 - [ ] **MUST**: Visibility (public/private) is set in line with the information classification and decision.
 - [ ] **MUST**: Standard files (LICENSE, README, .gitignore) are in place, ideally from the [open-source-project-template](https://github.com/diggsweden/open-source-project-template). `.gitignore` covers the language's or build system's default output so that generated artefacts are not version-controlled.
+- [ ] **MUST**: A documentation site published through GitHub Pages or equivalent has a clear Pages/documentation repository when the site has its own lifecycle or collects documentation from several repositories.
+- [ ] **MUST**: DNS names for Digg documentation sites follow the pattern `docs.<name>.digg.se`.
+- [ ] **MUST**: The built-in Jekyll builder in GitHub Pages is not used as the standard. Build the site explicitly in CI with Hugo or an equivalent static-site generator and publish the generated files to Pages.
 - [ ] **SHOULD**: A `CODEOWNERS` file is used as a complement to the README's maintainer section. It identifies the responsible parties per file area and ensures the right person automatically receives a review request. See [Release preparation](../release-preparation/).
 
 ## B. Permissions and access

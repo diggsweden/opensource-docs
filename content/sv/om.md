@@ -1,21 +1,10 @@
 ---
 title: "Om handboken"
-description: "Om Diggs handbok för öppen programvara: terminologi, teman, policy"
+description: "Om Diggs handbok för öppen programvara: policy, integritet, licens och bidrag"
 weight: 90
 ---
 
-Det här är en sida om handboken själv — vilka teman den täcker, vad som gäller kring integritet och licens, samt hur du bidrar.
-
-## Diggs teman på GitHub
-
-Diggs öppna kod är grupperad i flera teman på `github.com/diggsweden`.
-Varje tema har sin egen dokumentationssajt:
-
-| Tema | Plats |
-|---|---|
-| Öppen programvara | denna handbok |
-| Plånboksekosystemet | [docs.wallet.digg.se](https://docs.wallet.digg.se/) *(planerad)* |
-| Öppen data (DCAT-AP-SE) | [docs.dataportal.se/dcat](https://docs.dataportal.se/dcat) |
+Det här är en sida om handboken själv: vad den bygger på, vad som gäller kring integritet och licens, samt hur du bidrar.
 
 ## Policy och riktlinjer
 
@@ -58,7 +47,7 @@ Förslag och rättelser tas tacksamt emot via ärenden och ändringsförfrågnin
 
 ## Status
 
-Denna handbok är **arbetsmaterial** under uppbyggnad.
+Aktuell version: {{< site-version >}}.
 
 ## Se även
 

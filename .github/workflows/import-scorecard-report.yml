@@ -1,0 +1,59 @@
+# SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+#
+# SPDX-License-Identifier: CC0-1.0
+
+name: Import OpenSSF Scorecard report
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      HAS_SCORECARD_MONITOR_TOKEN: ${{ secrets.SCORECARD_MONITOR_TOKEN != '' }}
+    steps:
+      - name: Checkout handbook
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          path: opensource-docs
+
+      - name: Skip import when token is not configured
+        if: ${{ env.HAS_SCORECARD_MONITOR_TOKEN != 'true' }}
+        run: |
+          echo "SCORECARD_MONITOR_TOKEN is not configured; keeping checked-in Scorecard report data."
+
+      - name: Checkout Scorecard monitor
+        if: ${{ env.HAS_SCORECARD_MONITOR_TOKEN == 'true' }}
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          repository: diggsweden/digg-scorecard-monitor
+          token: ${{ secrets.SCORECARD_MONITOR_TOKEN }}
+          path: digg-scorecard-monitor
+          persist-credentials: false
+
+      - name: Import public Scorecard report data
+        if: ${{ env.HAS_SCORECARD_MONITOR_TOKEN == 'true' }}
+        working-directory: opensource-docs
+        run: |
+          bash scripts/import_openssf_scorecard_report.sh \
+            --report "../digg-scorecard-monitor/reporting/openssf-scorecard-report.md" \
+            --allowlist "config/reports/openssf-scorecard-public-repos.txt" \
+            --exclude-list "config/reports/openssf-scorecard-excluded-repos.txt" \
+            --output "data/reports/openssf_scorecard.json"
+
+      - name: Commit updated report data
+        if: ${{ env.HAS_SCORECARD_MONITOR_TOKEN == 'true' }}
+        working-directory: opensource-docs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/reports/openssf_scorecard.json
+          git diff --cached --quiet || git commit -m "chore: update OpenSSF Scorecard report data"
+          git push

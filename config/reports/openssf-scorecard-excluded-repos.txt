@@ -1,0 +1,8 @@
+# SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+# SPDX-License-Identifier: CC0-1.0
+
+# Repositories that must never be published in the handbook report, even if
+# they appear in the source report. Keep this as a defence-in-depth filter next
+# to the public allowlist.
+diggsweden/dgc-java
+diggsweden/hash2curve-lib-java

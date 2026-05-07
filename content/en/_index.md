@@ -38,14 +38,13 @@ The content is under a free licence — free to reuse, modify and share.
     link="projects/"
   >}}
   {{< hextra/feature-card
+    title="Reports"
+    subtitle="Generated reports about project health, security and stewardship, including OpenSSF Scorecard status for Digg's open repositories."
+    link="reports/"
+  >}}
+  {{< hextra/feature-card
     title="Template project for open source software"
     subtitle="A starting structure for new open projects with community files, security scanning and licence conventions pre-configured. Copy, adapt, publish."
     link="project-template/"
   >}}
 {{< /hextra/feature-grid >}}
-
-<div class="hx:mt-auto hx:pt-12 hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">
-
-The handbook is currently **work in progress**.
-
-</div>

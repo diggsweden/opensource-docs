@@ -38,14 +38,13 @@ Innehållet är under fri licens — fritt att återanvända, ändra och dela vi
     link="projekt/"
   >}}
   {{< hextra/feature-card
+    title="Rapporter"
+    subtitle="Genererade rapporter om projekthälsa, säkerhet och förvaltning, bland annat OpenSSF Scorecard-status för Diggs öppna kodförråd."
+    link="rapporter/"
+  >}}
+  {{< hextra/feature-card
     title="Mallprojekt för öppen programvara"
     subtitle="En startstruktur för nya öppna projekt med gemenskapsfiler, säkerhetsskanning och licens-konventioner förkonfigurerade. Kopiera, anpassa, publicera."
     link="projektmall/"
   >}}
 {{< /hextra/feature-grid >}}
-
-<div class="hx:mt-auto hx:pt-12 hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">
-
-Handboken är för tillfället **arbetsmaterial**.
-
-</div>

@@ -24,6 +24,25 @@ hugo server
 
 Sajten serveras på <http://localhost:1313/>.
 
+### Uppdatera rapportdata lokalt
+
+Om `digg-scorecard-monitor` finns som sibling-repo kan Scorecard-rapporten importeras innan `hugo server` startas:
+Scriptet är skrivet i Bash och kräver `jq`.
+
+```sh
+bash scripts/import_openssf_scorecard_report.sh \
+  --report "../digg-scorecard-monitor/reporting/openssf-scorecard-report.md" \
+  --allowlist "config/reports/openssf-scorecard-public-repos.txt" \
+  --exclude-list "config/reports/openssf-scorecard-excluded-repos.txt" \
+  --output "data/reports/openssf_scorecard.json"
+```
+
+Samma JSON används av Hugo och av den nattliga importen i GitHub Actions.
+
+Den nattliga importen kräver en repo-secret `SCORECARD_MONITOR_TOKEN`.
+Använd en fine-grained PAT eller GitHub App-token med minsta möjliga åtkomst: `Contents: read` på `diggsweden/digg-scorecard-monitor`.
+Workflowens vanliga `GITHUB_TOKEN` används bara för att committa uppdaterad JSON i `opensource-docs`.
+
 #### Två konfigurationslager
 
 Konfigurationen är uppdelad i två lager så att inga flaggor behöver anges manuellt:

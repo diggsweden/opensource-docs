@@ -76,9 +76,11 @@ Projekt som inte längre har aktiv förvaltning men finns kvar som referensmater
 ## Förvaltning av projektlistan
 
 Projekt utan aktiv underhållsansvarig arkiveras. Aktivitet bedöms enligt mönstret i [Arbete på GitHub: Arkivering av projekt](../arbeta-pa-github/#arkivering-av-projekt).
+För säkerhetspraxis och projekthälsa, se även [OpenSSF Scorecard-rapporten](../rapporter/openssf-scorecard/).
 
 ## Se även
 
 - [Mallprojekt för öppen programvara](../projektmall/): startstruktur för nya projekt
 - [Arbete på GitHub](../arbeta-pa-github/): kontoupplägg, säkerhet, ärendehantering och publicering
+- [Rapporter](../rapporter/): genererade rapporter om projekthälsa, säkerhet och förvaltning
 - [Andra svenska offentliga aktörer](../referens/andra-offentliga-aktorer/): myndigheter, kommuner och regioner på kodsamverkansplattformar
