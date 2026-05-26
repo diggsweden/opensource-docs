@@ -11,4 +11,4 @@ Scorecard är en indikator på säkerhetspraxis och projekthälsa, inte ett form
 
 ## Källa
 
-Rapportdata hämtas från `diggsweden/digg-scorecard-monitor` och filtreras innan publicering så att endast godkända offentliga kodförråd visas.
+Rapportdata hämtas från `diggsweden/digg-scorecard-monitor` och följer monitorns scope: aktiva offentliga kodförråd visas om de inte är uttryckligen exkluderade.

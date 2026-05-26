@@ -1,0 +1,193 @@
+{{/*
+  SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+  SPDX-License-Identifier: CC0-1.0
+*/}}
+{{- $data := hugo.Data.reports.sca_renovate -}}
+{{- $lang := .Page.Language.Lang | default "sv" -}}
+{{- $labels := dict
+  "updated" "Senast uppdaterad"
+  "total" "Kodförråd"
+  "withConfig" "Med Renovate"
+  "withBase" "Med baspreset"
+  "withDashboard" "Med dashboard"
+  "caption" "SCA/Renovate-status för Diggs öppna kodförråd"
+  "repository" "Kodförråd"
+  "renovateConfig" "Renovate"
+  "basePreset" "Baspreset"
+  "managers" "Managers"
+  "dashboard" "Dashboard"
+  "yes" "Ja"
+  "no" "Nej"
+  "open" "Öppna"
+  "search" "Sök"
+  "missing" "Saknas"
+  "defaultManagers" "Standard"
+  "unknown" "Okänt"
+  "sortIndicator" "-"
+  "noData" "Rapportdata saknas. Kör importscripten innan webbplatsen byggs."
+-}}
+{{- if eq $lang "en" -}}
+  {{- $labels = dict
+    "updated" "Last updated"
+    "total" "Repositories"
+    "withConfig" "With Renovate"
+    "withBase" "With base preset"
+    "withDashboard" "With dashboard"
+    "caption" "SCA/Renovate status for Digg's open repositories"
+    "repository" "Repository"
+    "renovateConfig" "Renovate"
+    "basePreset" "Base preset"
+    "managers" "Managers"
+    "dashboard" "Dashboard"
+    "yes" "Yes"
+    "no" "No"
+    "open" "Open"
+    "search" "Search"
+    "missing" "Missing"
+    "defaultManagers" "Default"
+    "unknown" "Unknown"
+    "sortIndicator" "-"
+    "noData" "Report data is missing. Run the import script before building the site."
+  -}}
+{{- end -}}
+
+{{- if not $data -}}
+  <p>{{ index $labels "noData" }}</p>
+{{- else -}}
+  <div class="hx:my-6 hx:grid hx:grid-cols-1 hx:gap-4 hx:md:grid-cols-4">
+    <div class="hx:rounded-lg hx:border hx:border-gray-200 hx:p-4 hx:dark:border-neutral-800">
+      <div class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">{{ index $labels "total" }}</div>
+      <div class="hx:text-2xl hx:font-semibold">{{ $data.summary.total_repositories }}</div>
+    </div>
+    <div class="hx:rounded-lg hx:border hx:border-gray-200 hx:p-4 hx:dark:border-neutral-800">
+      <div class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">{{ index $labels "withConfig" }}</div>
+      <div class="hx:text-2xl hx:font-semibold">{{ $data.summary.repositories_with_renovate_config }}</div>
+    </div>
+    <div class="hx:rounded-lg hx:border hx:border-gray-200 hx:p-4 hx:dark:border-neutral-800">
+      <div class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">{{ index $labels "withBase" }}</div>
+      <div class="hx:text-2xl hx:font-semibold">{{ $data.summary.repositories_using_base_preset }}</div>
+    </div>
+    <div class="hx:rounded-lg hx:border hx:border-gray-200 hx:p-4 hx:dark:border-neutral-800">
+      <div class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">{{ index $labels "withDashboard" }}</div>
+      <div class="hx:text-2xl hx:font-semibold">{{ $data.summary.repositories_with_dependency_dashboard_issue }}</div>
+    </div>
+  </div>
+
+  <p class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">
+    {{ index $labels "updated" }}: {{ $data.generated_at }}
+  </p>
+
+  <div class="hx:overflow-x-auto">
+    <table data-sortable-sca-renovate-report>
+      <caption class="hx:sr-only">{{ index $labels "caption" }}</caption>
+      <thead>
+        <tr>
+          <th scope="col" data-sort-kind="text" aria-sort="ascending"><button type="button" data-sort-button class="hx:flex hx:items-center hx:gap-1 hx:rounded-sm hx:border-0 hx:bg-transparent hx:p-0 hx:text-left hx:font-semibold hx:cursor-pointer hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2"><span>{{ index $labels "repository" }}</span><span data-sort-indicator aria-hidden="true">^</span></button></th>
+          <th scope="col" data-sort-kind="number"><button type="button" data-sort-button class="hx:flex hx:items-center hx:gap-1 hx:rounded-sm hx:border-0 hx:bg-transparent hx:p-0 hx:text-left hx:font-semibold hx:cursor-pointer hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2"><span>{{ index $labels "renovateConfig" }}</span><span data-sort-indicator aria-hidden="true">{{ index $labels "sortIndicator" }}</span></button></th>
+          <th scope="col" data-sort-kind="number"><button type="button" data-sort-button class="hx:flex hx:items-center hx:gap-1 hx:rounded-sm hx:border-0 hx:bg-transparent hx:p-0 hx:text-left hx:font-semibold hx:cursor-pointer hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2"><span>{{ index $labels "basePreset" }}</span><span data-sort-indicator aria-hidden="true">{{ index $labels "sortIndicator" }}</span></button></th>
+          <th scope="col" data-sort-kind="text"><button type="button" data-sort-button class="hx:flex hx:items-center hx:gap-1 hx:rounded-sm hx:border-0 hx:bg-transparent hx:p-0 hx:text-left hx:font-semibold hx:cursor-pointer hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2"><span>{{ index $labels "managers" }}</span><span data-sort-indicator aria-hidden="true">{{ index $labels "sortIndicator" }}</span></button></th>
+          <th scope="col" data-sort-kind="number"><button type="button" data-sort-button class="hx:flex hx:items-center hx:gap-1 hx:rounded-sm hx:border-0 hx:bg-transparent hx:p-0 hx:text-left hx:font-semibold hx:cursor-pointer hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2"><span>{{ index $labels "dashboard" }}</span><span data-sort-indicator aria-hidden="true">{{ index $labels "sortIndicator" }}</span></button></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{- range $data.repositories }}
+          {{- $managers := .enabled_managers -}}
+          {{- $managerList := "" -}}
+          {{- if and $managers (gt (len $managers) 0) -}}
+            {{- $managerList = delimit $managers ", " -}}
+          {{- end -}}
+          <tr>
+            <td data-sort-value="{{ .name }}"><a href="{{ .url }}">{{ .name }}</a></td>
+            <td data-sort-value="{{ if eq .renovate_config_present true }}1{{ else if eq .renovate_config_present false }}0{{ else }}-1{{ end }}">
+              {{- if eq .renovate_config_present true -}}
+                {{- if .renovate_config_url -}}<a href="{{ .renovate_config_url }}">{{ .renovate_config_path }}</a>{{- else -}}{{ index $labels "yes" }}{{- end -}}
+              {{- else if eq .renovate_config_present false -}}
+                {{ index $labels "missing" }}
+              {{- else -}}
+                {{ index $labels "unknown" }}
+              {{- end -}}
+            </td>
+            <td data-sort-value="{{ if eq .renovate_uses_base_preset true }}1{{ else if eq .renovate_uses_base_preset false }}0{{ else }}-1{{ end }}">
+              {{- if eq .renovate_uses_base_preset true -}}{{ index $labels "yes" }}{{- else if eq .renovate_uses_base_preset false -}}{{ index $labels "no" }}{{- else -}}{{ index $labels "unknown" }}{{- end -}}
+            </td>
+            <td data-sort-value="{{ $managerList }}">
+              {{- if ne $managerList "" -}}{{ $managerList }}{{- else if eq .renovate_config_present true -}}{{ index $labels "defaultManagers" }}{{- else -}}{{ index $labels "unknown" }}{{- end -}}
+            </td>
+            <td data-sort-value="{{ if eq .renovate_dashboard_found true }}1{{ else if eq .renovate_dashboard_found false }}0{{ else }}-1{{ end }}">
+              {{- if .renovate_dashboard_url -}}
+                <a href="{{ .renovate_dashboard_url }}">{{ if eq .renovate_dashboard_found true }}{{ index $labels "open" }}{{ else }}{{ index $labels "search" }}{{ end }}</a>
+              {{- else if eq .renovate_config_present false -}}
+                {{ index $labels "missing" }}
+              {{- else -}}
+                {{ index $labels "unknown" }}
+              {{- end -}}
+            </td>
+          </tr>
+        {{- end }}
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    (() => {
+      const table = document.querySelector('[data-sortable-sca-renovate-report]');
+      if (!table || !table.tBodies.length) return;
+
+      const headers = Array.from(table.querySelectorAll('thead th'));
+      const tbody = table.tBodies[0];
+      const collator = new Intl.Collator(document.documentElement.lang || undefined, { numeric: true, sensitivity: 'base' });
+
+      const valueFor = (row, index) => row.cells[index]?.dataset.sortValue?.trim() ?? '';
+      const parsedValue = (value, kind) => {
+        if (value === '') return null;
+        if (kind === 'number') {
+          const number = Number.parseFloat(value);
+          return Number.isNaN(number) ? null : number;
+        }
+        if (kind === 'date') {
+          const timestamp = Date.parse(value);
+          return Number.isNaN(timestamp) ? null : timestamp;
+        }
+        return value;
+      };
+      const compare = (left, right, kind, direction) => {
+        const leftValue = parsedValue(left, kind);
+        const rightValue = parsedValue(right, kind);
+        if (leftValue === null && rightValue === null) return 0;
+        if (leftValue === null) return 1;
+        if (rightValue === null) return -1;
+        const result = kind === 'number' || kind === 'date'
+          ? leftValue - rightValue
+          : collator.compare(String(leftValue), String(rightValue));
+        return direction === 'ascending' ? result : -result;
+      };
+
+      headers.forEach((header, index) => {
+        const button = header.querySelector('[data-sort-button]');
+        if (!button) return;
+
+        button.addEventListener('click', () => {
+          const direction = header.getAttribute('aria-sort') === 'ascending' ? 'descending' : 'ascending';
+          const kind = header.dataset.sortKind || 'text';
+          const rows = Array.from(tbody.rows);
+
+          headers.forEach((otherHeader) => {
+            otherHeader.removeAttribute('aria-sort');
+            const indicator = otherHeader.querySelector('[data-sort-indicator]');
+            if (indicator) indicator.textContent = '-';
+          });
+
+          header.setAttribute('aria-sort', direction);
+          const indicator = header.querySelector('[data-sort-indicator]');
+          if (indicator) indicator.textContent = direction === 'ascending' ? '^' : 'v';
+
+          rows.sort((leftRow, rightRow) => {
+            return compare(valueFor(leftRow, index), valueFor(rightRow, index), kind, direction);
+          });
+
+          rows.forEach((row) => tbody.appendChild(row));
+        });
+      });
+    })();
+  </script>
+{{- end -}}

@@ -11,9 +11,9 @@ IMPORTED_AT="${IMPORTED_AT:-}"
 
 usage() {
   cat <<'EOF'
-Usage: import_openssf_scorecard_report.sh --report PATH --output PATH [--source-commit SHA] [--imported-at TIMESTAMP]
+Usage: import_codeowners_report.sh --report PATH --output PATH [--source-commit SHA] [--imported-at TIMESTAMP]
 
-Imports the structured OpenSSF Scorecard Monitor JSON report as Hugo data.
+Imports the structured CODEOWNERS JSON report as Hugo data.
 Requires jq.
 EOF
 }
@@ -107,7 +107,7 @@ validate_report() {
     (.repositories | type == "array") and
     (.summary.total_repositories == (.repositories | length))
   ' "$REPORT" >/dev/null || {
-    echo "Invalid Scorecard JSON report: $REPORT" >&2
+    echo "Invalid CODEOWNERS JSON report: $REPORT" >&2
     exit 1
   }
 }
@@ -122,9 +122,8 @@ write_import() {
         source: (.source + {
           commit: (if $source_commit == "" then null else $source_commit end),
           path: $report_path,
-          report_path: $report_path,
-          scope_path: (.source.scope_path // null)
-        })
+          report_path: $report_path
+        } + if .source.scope_path == null then {} else {scope_path: .source.scope_path} end)
       }
     ' "$REPORT" > "$tmp_output"
 }
@@ -135,7 +134,7 @@ validate_output() {
     (.source.repository | type == "string") and
     (.source.commit == null or (.source.commit | type == "string")) and
     (.source.report_path | type == "string") and
-    (.source.scope_path | type == "string")
+    ((.source | has("scope_path") | not) or (.source.scope_path | type == "string"))
   ' "$tmp_output" >/dev/null
 }
 
@@ -176,7 +175,7 @@ main() {
   rm -f "$tmp_previous" "$tmp_current"
   trap - EXIT
 
-  echo "Imported Scorecard report from $REPORT to $OUTPUT"
+  echo "Imported CODEOWNERS report from $REPORT to $OUTPUT"
 }
 
 main "$@"

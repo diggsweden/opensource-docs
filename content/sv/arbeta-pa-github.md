@@ -152,6 +152,14 @@ För ett praktiskt exempel på en release-pipeline som använder dem, se [`diggs
 
 ## Vanliga frågor (FAQ)
 
+### Organisationsnamn och plattform
+
+* **Vad händer med DiggSweden när Digg går ihop med PTS?**
+
+  Inriktningen är att GitHub-organisationen `diggsweden` byter namn till `digitaliseringsmyndigheten`.
+  Lokala kodförråd kan då pekas om med ett enkelt handgrepp, till exempel genom att uppdatera `origin` med `git remote set-url`.
+  Samtidigt pågår också ett separat arbete där vi undersöker om och hur Codeberg kan användas i samband med övergången.
+
 ### Team
 
 * **Hur skapar jag ett GitHub-team?**

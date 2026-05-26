@@ -1,0 +1,197 @@
+{{/*
+  SPDX-FileCopyrightText: 2026 Digg - Agency for Digital Government
+  SPDX-License-Identifier: CC0-1.0
+*/}}
+{{- $data := hugo.Data.reports.reuse -}}
+{{- $lang := .Page.Language.Lang | default "sv" -}}
+{{- $labels := dict
+  "updated" "Senast uppdaterad"
+  "total" "Kodförråd"
+  "registered" "Registrerade i REUSE API"
+  "compliant" "REUSE-godkända"
+  "badge" "Med REUSE-badge"
+  "caption" "REUSE API-status för Diggs öppna kodförråd"
+  "repository" "Kodförråd"
+  "reuseApi" "REUSE API"
+  "reuseBadge" "Badge"
+  "reuseMetadata" "REUSE-metadata"
+  "githubLicense" "GitHub-licens"
+  "licenses" "LICENSES/"
+  "yes" "Ja"
+  "no" "Nej"
+  "missing" "Saknas"
+  "notRegistered" "Inte registrerad"
+  "notAvailable" "Inte tillgängligt"
+  "unknown" "Okänt"
+  "sortIndicator" "-"
+  "noData" "Rapportdata saknas. Kör importscripten innan webbplatsen byggs."
+-}}
+{{- if eq $lang "en" -}}
+  {{- $labels = dict
+    "updated" "Last updated"
+    "total" "Repositories"
+    "registered" "Registered in REUSE API"
+    "compliant" "REUSE compliant"
+    "badge" "With REUSE badge"
+    "caption" "REUSE API status for Digg's open repositories"
+    "repository" "Repository"
+    "reuseApi" "REUSE API"
+    "reuseBadge" "Badge"
+    "reuseMetadata" "REUSE metadata"
+    "githubLicense" "GitHub licence"
+    "licenses" "LICENSES/"
+    "yes" "Yes"
+    "no" "No"
+    "missing" "Missing"
+    "notRegistered" "Not registered"
+    "notAvailable" "Not available"
+    "unknown" "Unknown"
+    "sortIndicator" "-"
+    "noData" "Report data is missing. Run the import script before building the site."
+  -}}
+{{- end -}}
+
+{{- if not $data -}}
+  <p>{{ index $labels "noData" }}</p>
+{{- else -}}
+  <div class="hx:my-6 hx:grid hx:grid-cols-1 hx:gap-4 hx:md:grid-cols-4">
+    <div class="hx:rounded-lg hx:border hx:border-gray-200 hx:p-4 hx:dark:border-neutral-800">
+      <div class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">{{ index $labels "total" }}</div>
+      <div class="hx:text-2xl hx:font-semibold">{{ $data.summary.total_repositories }}</div>
+    </div>
+    <div class="hx:rounded-lg hx:border hx:border-gray-200 hx:p-4 hx:dark:border-neutral-800">
+      <div class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">{{ index $labels "registered" }}</div>
+      <div class="hx:text-2xl hx:font-semibold">{{ $data.summary.repositories_registered_in_reuse_api }}</div>
+    </div>
+    <div class="hx:rounded-lg hx:border hx:border-gray-200 hx:p-4 hx:dark:border-neutral-800">
+      <div class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">{{ index $labels "compliant" }}</div>
+      <div class="hx:text-2xl hx:font-semibold">{{ $data.summary.repositories_reuse_compliant }}</div>
+    </div>
+    <div class="hx:rounded-lg hx:border hx:border-gray-200 hx:p-4 hx:dark:border-neutral-800">
+      <div class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">{{ index $labels "badge" }}</div>
+      <div class="hx:text-2xl hx:font-semibold">{{ $data.summary.repositories_with_reuse_badge }}</div>
+    </div>
+  </div>
+
+  <p class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">
+    {{ index $labels "updated" }}: {{ $data.generated_at }}
+  </p>
+
+  <div class="hx:overflow-x-auto">
+    <table data-sortable-reuse-report>
+      <caption class="hx:sr-only">{{ index $labels "caption" }}</caption>
+      <thead>
+        <tr>
+          <th scope="col" data-sort-kind="text" aria-sort="ascending"><button type="button" data-sort-button class="hx:flex hx:items-center hx:gap-1 hx:rounded-sm hx:border-0 hx:bg-transparent hx:p-0 hx:text-left hx:font-semibold hx:cursor-pointer hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2"><span>{{ index $labels "repository" }}</span><span data-sort-indicator aria-hidden="true">^</span></button></th>
+          <th scope="col" data-sort-kind="text"><button type="button" data-sort-button class="hx:flex hx:items-center hx:gap-1 hx:rounded-sm hx:border-0 hx:bg-transparent hx:p-0 hx:text-left hx:font-semibold hx:cursor-pointer hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2"><span>{{ index $labels "reuseApi" }}</span><span data-sort-indicator aria-hidden="true">{{ index $labels "sortIndicator" }}</span></button></th>
+          <th scope="col" data-sort-kind="number"><button type="button" data-sort-button class="hx:flex hx:items-center hx:gap-1 hx:rounded-sm hx:border-0 hx:bg-transparent hx:p-0 hx:text-left hx:font-semibold hx:cursor-pointer hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2"><span>{{ index $labels "reuseBadge" }}</span><span data-sort-indicator aria-hidden="true">{{ index $labels "sortIndicator" }}</span></button></th>
+          <th scope="col" data-sort-kind="number"><button type="button" data-sort-button class="hx:flex hx:items-center hx:gap-1 hx:rounded-sm hx:border-0 hx:bg-transparent hx:p-0 hx:text-left hx:font-semibold hx:cursor-pointer hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2"><span>{{ index $labels "reuseMetadata" }}</span><span data-sort-indicator aria-hidden="true">{{ index $labels "sortIndicator" }}</span></button></th>
+          <th scope="col" data-sort-kind="text"><button type="button" data-sort-button class="hx:flex hx:items-center hx:gap-1 hx:rounded-sm hx:border-0 hx:bg-transparent hx:p-0 hx:text-left hx:font-semibold hx:cursor-pointer hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2"><span>{{ index $labels "githubLicense" }}</span><span data-sort-indicator aria-hidden="true">{{ index $labels "sortIndicator" }}</span></button></th>
+          <th scope="col" data-sort-kind="text"><button type="button" data-sort-button class="hx:flex hx:items-center hx:gap-1 hx:rounded-sm hx:border-0 hx:bg-transparent hx:p-0 hx:text-left hx:font-semibold hx:cursor-pointer hx:focus-visible:outline hx:focus-visible:outline-2 hx:focus-visible:outline-offset-2"><span>{{ index $labels "licenses" }}</span><span data-sort-indicator aria-hidden="true">{{ index $labels "sortIndicator" }}</span></button></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{- range $data.repositories }}
+          {{- $licenses := .declared_licenses -}}
+          {{- $licenseList := "" -}}
+          {{- if and $licenses (gt (len $licenses) 0) -}}
+            {{- $licenseList = delimit $licenses ", " -}}
+          {{- end -}}
+          <tr>
+            <td data-sort-value="{{ .name }}"><a href="{{ .url }}">{{ .name }}</a></td>
+            <td data-sort-value="{{ .reuse_status }}">
+              {{- if eq .reuse_registered true -}}
+                <a href="{{ .reuse_info_url }}">{{ .reuse_status }}</a>
+              {{- else if eq .reuse_registered false -}}
+                {{ index $labels "notRegistered" }}
+              {{- else -}}
+                {{ index $labels "unknown" }}
+              {{- end -}}
+            </td>
+            <td data-sort-value="{{ if eq .reuse_badge_present true }}1{{ else if eq .reuse_badge_present false }}0{{ else }}-1{{ end }}">
+              {{- if eq .reuse_badge_present true -}}{{ index $labels "yes" }}{{- else if eq .reuse_badge_present false -}}{{ index $labels "no" }}{{- else -}}{{ index $labels "unknown" }}{{- end -}}
+            </td>
+            <td data-sort-value="{{ if eq .reuse_metadata_present true }}1{{ else if eq .reuse_metadata_present false }}0{{ else }}-1{{ end }}">
+              {{- if eq .reuse_metadata_present true -}}{{ index $labels "yes" }}{{- else if eq .reuse_metadata_present false -}}{{ index $labels "no" }}{{- else -}}{{ index $labels "unknown" }}{{- end -}}
+            </td>
+            <td data-sort-value="{{ if .github_license }}{{ .github_license }}{{ end }}">{{ if .github_license }}{{ .github_license }}{{ else }}{{ index $labels "notAvailable" }}{{ end }}</td>
+            <td data-sort-value="{{ $licenseList }}">
+              {{- if ne $licenseList "" -}}
+                {{ $licenseList }}
+              {{- else if eq .licenses_dir_present false -}}
+                {{ index $labels "missing" }}
+              {{- else if eq .licenses_dir_present true -}}
+                {{ index $labels "notAvailable" }}
+              {{- else -}}
+                {{ index $labels "unknown" }}
+              {{- end -}}
+            </td>
+          </tr>
+        {{- end }}
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    (() => {
+      const table = document.querySelector('[data-sortable-reuse-report]');
+      if (!table || !table.tBodies.length) return;
+
+      const headers = Array.from(table.querySelectorAll('thead th'));
+      const tbody = table.tBodies[0];
+      const collator = new Intl.Collator(document.documentElement.lang || undefined, { numeric: true, sensitivity: 'base' });
+
+      const valueFor = (row, index) => row.cells[index]?.dataset.sortValue?.trim() ?? '';
+      const parsedValue = (value, kind) => {
+        if (value === '') return null;
+        if (kind === 'number') {
+          const number = Number.parseFloat(value);
+          return Number.isNaN(number) ? null : number;
+        }
+        if (kind === 'date') {
+          const timestamp = Date.parse(value);
+          return Number.isNaN(timestamp) ? null : timestamp;
+        }
+        return value;
+      };
+      const compare = (left, right, kind, direction) => {
+        const leftValue = parsedValue(left, kind);
+        const rightValue = parsedValue(right, kind);
+        if (leftValue === null && rightValue === null) return 0;
+        if (leftValue === null) return 1;
+        if (rightValue === null) return -1;
+        const result = kind === 'number' || kind === 'date'
+          ? leftValue - rightValue
+          : collator.compare(String(leftValue), String(rightValue));
+        return direction === 'ascending' ? result : -result;
+      };
+
+      headers.forEach((header, index) => {
+        const button = header.querySelector('[data-sort-button]');
+        if (!button) return;
+
+        button.addEventListener('click', () => {
+          const direction = header.getAttribute('aria-sort') === 'ascending' ? 'descending' : 'ascending';
+          const kind = header.dataset.sortKind || 'text';
+          const rows = Array.from(tbody.rows);
+
+          headers.forEach((otherHeader) => {
+            otherHeader.removeAttribute('aria-sort');
+            const indicator = otherHeader.querySelector('[data-sort-indicator]');
+            if (indicator) indicator.textContent = '-';
+          });
+
+          header.setAttribute('aria-sort', direction);
+          const indicator = header.querySelector('[data-sort-indicator]');
+          if (indicator) indicator.textContent = direction === 'ascending' ? '^' : 'v';
+
+          rows.sort((leftRow, rightRow) => {
+            return compare(valueFor(leftRow, index), valueFor(rightRow, index), kind, direction);
+          });
+
+          rows.forEach((row) => tbody.appendChild(row));
+        });
+      });
+    })();
+  </script>
+{{- end -}}

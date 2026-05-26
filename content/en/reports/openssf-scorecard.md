@@ -11,4 +11,4 @@ Scorecard is an indicator of security practice and project health, not a formal 
 
 ## Source
 
-Report data is fetched from `diggsweden/digg-scorecard-monitor` and filtered before publication so that only approved public repositories are shown.
+Report data is fetched from `diggsweden/digg-scorecard-monitor` and follows the monitor scope: active public repositories are shown unless they are explicitly excluded.
