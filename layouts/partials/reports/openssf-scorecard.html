@@ -47,6 +47,8 @@
   -}}
 {{- end -}}
 
+{{- $stockholm := (time.AsTime "2000-01-01T00:00:00" "Europe/Stockholm").Location -}}
+
 {{- if not $data -}}
   <p>{{ index $labels "noData" }}</p>
 {{- else -}}
@@ -70,8 +72,8 @@
   </div>
 
   <p class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">
-    {{ index $labels "updated" }}: {{ dateFormat "2006-01-02 15:04 MST" ((time.AsTime $data.generated_at).In (time.Location "Europe/Stockholm")) }}{{ if $data.latest_scorecard_at }}<br>
-    {{ index $labels "latestScore" }}: {{ dateFormat "2006-01-02" ((time.AsTime $data.latest_scorecard_at).In (time.Location "Europe/Stockholm")) }}{{ end }}
+    {{ index $labels "updated" }}: {{ dateFormat "2006-01-02 15:04 MST" ((time.AsTime $data.generated_at).In $stockholm) }}{{ if $data.latest_scorecard_at }}<br>
+    {{ index $labels "latestScore" }}: {{ dateFormat "2006-01-02" ((time.AsTime $data.latest_scorecard_at).In $stockholm) }}{{ end }}
   </p>
 
   <div class="hx:overflow-x-auto">
