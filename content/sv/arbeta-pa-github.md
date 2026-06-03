@@ -242,6 +242,6 @@ För ett praktiskt exempel på en release-pipeline som använder dem, se [`diggs
 
 ## Länkar
 
-* [Allmänna riktlinjer för öppen programvara på Digg (2022, fortsatt aktuella; uppdaterad version 2026 publiceras snart)](https://www.digg.se/download/18.72c5e64d183579af3fd1b6c/1664286148293/riktlinjer-for-utveckling-och-publicering-av-oppen-programvara.pdf)
+* [Anskaffning, utveckling och publicering av öppen programvara — policy och riktlinjer (Digg, 2026)](https://www.digg.se/analys-och-uppfoljning/publikationer/publikationer/2026-06-03-anskaffning-utveckling-och-publicering-av-oppen-programvara-policy-och-riktlinjer)
 * [Diggs hjälpmallprojekt för öppna programvaruprojekt](https://github.com/diggsweden/open-source-project-template)
 * [Diggs basrepo för organisationen DiggSweden](https://github.com/diggsweden/.github)

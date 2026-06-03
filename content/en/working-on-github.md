@@ -219,6 +219,6 @@ For a practical example of a release pipeline that uses them, see [`diggsweden/c
 
 ## Links
 
-* [General guidelines for open source software at Digg (2022, still current; an updated 2026 version will be published soon)](https://www.digg.se/download/18.72c5e64d183579af3fd1b6c/1664286148293/riktlinjer-for-utveckling-och-publicering-av-oppen-programvara.pdf) (in Swedish)
+* [Procurement, development and publication of open source software — policy and guidelines (Digg, 2026)](https://www.digg.se/analys-och-uppfoljning/publikationer/publikationer/2026-06-03-anskaffning-utveckling-och-publicering-av-oppen-programvara-policy-och-riktlinjer) (in Swedish)
 * [Digg's helper template project for open source projects](https://github.com/diggsweden/open-source-project-template)
 * [Digg's base repo for the DiggSweden organisation](https://github.com/diggsweden/.github)
