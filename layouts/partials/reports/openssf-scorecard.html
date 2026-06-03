@@ -6,6 +6,7 @@
 {{- $lang := .Page.Language.Lang | default "sv" -}}
 {{- $labels := dict
   "updated" "Senast uppdaterad"
+  "latestScore" "Senaste Scorecard-mätning"
   "total" "Kodförråd"
   "withScore" "Med Scorecard-data"
   "withoutScore" "Saknar Scorecard-data"
@@ -26,6 +27,7 @@
 {{- if eq $lang "en" -}}
   {{- $labels = dict
     "updated" "Last updated"
+    "latestScore" "Latest Scorecard measurement"
     "total" "Repositories"
     "withScore" "With Scorecard data"
     "withoutScore" "Missing Scorecard data"
@@ -68,7 +70,8 @@
   </div>
 
   <p class="hx:text-sm hx:text-gray-500 hx:dark:text-gray-400">
-    {{ index $labels "updated" }}: {{ $data.generated_at }}
+    {{ index $labels "updated" }}: {{ dateFormat "2006-01-02 15:04 UTC" $data.generated_at }}{{ if $data.latest_scorecard_at }}<br>
+    {{ index $labels "latestScore" }}: {{ dateFormat "2006-01-02" $data.latest_scorecard_at }}{{ end }}
   </p>
 
   <div class="hx:overflow-x-auto">
