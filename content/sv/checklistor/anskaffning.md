@@ -6,11 +6,11 @@ weight: 10
 
 **Syfte:** Stöd för beställare, kravställare och systemägare när öppen programvara övervägs eller väljs.
 
-**Vad checklistan täcker — och inte:** Den listar bara det som är specifikt för öppen programvara. Generella upphandlingskrav — informationssäkerhet, it-säkerhet, drift, arkitektur, TCO, diarieföring, utsedd systemägare etc. — förutsätts hanteras enligt era ordinarie processer och tas inte upp här.
+**Avgränsning:** Checklistan listar bara det som är specifikt för öppen programvara. Generella upphandlingskrav förutsätts hanteras enligt era ordinarie processer och tas inte upp här.
 
 När man upphandlar öppen programvara gäller andra spelregler än vid traditionell programvaruanskaffning: själva programvaran är fritt tillgänglig och det är tjänsterna runt den (implementation, support, underhåll, utbildning) som upphandlas. Kravställare/beställare kan därför namnge specifik öppen programvara direkt i underlaget; konkurrensen sker på tjänsterna istället för på produktvalet, vilket motverkar leverantörs­inlåsning.
 
-Detta är uttryckligen tillåtet enligt Kammarkollegiets [vägledning för avrop från *Programvaror och tjänster*](https://www.avropa.se/globalassets/bilagor/1.-aktuella-rao/programvaror-och-tjanster/avropsstod-samtl-delomraden/vagledning-programvaror--och-tjanster.pdf), sektion 3.3 "Programvara med öppen källkod":
+Enligt Kammarkollegiets [vägledning för avrop från *Programvaror och tjänster*](https://www.avropa.se/globalassets/bilagor/1.-aktuella-rao/programvaror-och-tjanster/avropsstod-samtl-delomraden/vagledning-programvaror--och-tjanster.pdf), sektion 3.3 "Programvara med öppen källkod":
 
 > Kund får ställa ett obligatoriskt krav på specifik namngiven Programvara som i sin helhet är licensierad med en eller flera licenser godkända av Open Source Initiative (OSI), är gratis och fri för alla leverantörer att nyttja (det krävs ex. ingen återförsäljarstatus).
 >

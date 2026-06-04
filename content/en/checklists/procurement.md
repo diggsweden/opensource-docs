@@ -6,11 +6,11 @@ weight: 10
 
 **Purpose:** Support for procurement officers, requirements specifiers and system owners when open source software is being considered or selected.
 
-**What this checklist covers — and doesn't:** It only lists what is specific to open source software. General procurement requirements — information security, IT security, operations, architecture, TCO, recordkeeping, appointed system owner etc. — are assumed to be handled according to your ordinary processes and are not covered here.
+**Scope:** This checklist only lists what is specific to open source software. General procurement requirements are assumed to be handled according to your ordinary processes and are not covered here.
 
 When procuring open source software the rules are different from traditional software procurement: the software itself is freely available and what is procured are the services around it (implementation, support, maintenance, training). Requirements specifiers and procurement officers can therefore name specific open source software directly in the procurement document; competition shifts to the services instead of the product choice, which counters vendor lock-in.
 
-This is explicitly permitted by Kammarkollegiet's [guidance for call-offs from *Software and Services*](https://www.avropa.se/globalassets/bilagor/1.-aktuella-rao/programvaror-och-tjanster/avropsstod-samtl-delomraden/vagledning-programvaror--och-tjanster.pdf) (in Swedish), section 3.3 "Software with open source code":
+Kammarkollegiet's [guidance for call-offs from *Software and Services*](https://www.avropa.se/globalassets/bilagor/1.-aktuella-rao/programvaror-och-tjanster/avropsstod-samtl-delomraden/vagledning-programvaror--och-tjanster.pdf) (in Swedish), section 3.3 "Software with open source code":
 
 > The buyer may set a mandatory requirement for specific named software which in its entirety is licensed under one or more licences approved by the Open Source Initiative (OSI), is free and open for all suppliers to use (no reseller status required, for example).
 >

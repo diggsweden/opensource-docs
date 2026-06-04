@@ -71,7 +71,7 @@ Använd [Mallprojekt för öppen programvara](../../projektmall/) som startpunkt
 
 - [ ] **SKA**: Projektnamnet är kontrollerat mot befintliga projekt, varumärken och sökträffar.
 - [ ] **SKA**: Projektet ligger i rätt organisation/yta hos Git-leverantör och synlighet (publik) är korrekt satt enligt informationsklassning.
-- [ ] **SKA**: Eventuell extern kommunikation (webb, dataportal, community) är planerad.
+- [ ] **SKA**: Eventuell extern kommunikation (webb, dataportal, gemenskap/community) är planerad.
 
 ## G. Versionshantering och utgåvor
 

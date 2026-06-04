@@ -17,7 +17,7 @@ weight: 90
 ## B. Frågor och kontaktvägar
 
 - [ ] **SKA**: Produkt- och projektrelaterade frågor besvaras av ansvarigt team via ärendehanteraren eller motsvarande.
-- [ ] **SKA**: Generella frågor om öppen programvara hänvisas till överenskommen funktion (t.ex. OSPO eller community).
+- [ ] **SKA**: Generella frågor om öppen programvara hänvisas till överenskommen funktion (t.ex. OSPO eller gemenskap/community).
 - [ ] **SKA**: Allmänna frågor om organisationens verksamhet hänvisas till ordinarie kontaktvägar (t.ex. info/registrator).
 - [ ] **SKA**: Dessa kontaktvägar framgår i README eller dokumentationen, så att frågor styrs rätt redan från början.
 
@@ -31,7 +31,7 @@ weight: 90
 - [ ] **SKA**: Licens- och copyrightfrågor för bidraget är godtagbara; bidragsgivare har intygat rätten att bidra (DCO eller CLA). Se [Förberedelse inför publicering](../publicering-forvaltning/) för projektets policy kring DCO/CLA.
 - [ ] **SKA**: Påverkan på projektets inriktning är bedömd i förhållande till dokumenterade mål och roadmap.
 - [ ] **SKA**: Bidrag kan nekas om de inte följer rutiner, mallar, krav eller bedöms passa projektets riktning. Avslag kommuniceras respektfullt och begripligt.
-- [ ] **BÖR**: Contributor Covenant eller motsvarande uppförandekod används. Sätter sociala spelregler för communityn.
+- [ ] **BÖR**: Contributor Covenant eller motsvarande uppförandekod används. Sätter sociala spelregler för gemenskapen/communityn.
 
 ## D. Avslutade/arkiverade projekt
 
