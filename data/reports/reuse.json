@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-05T16:49:51Z",
+  "generated_at": "2026-06-05T17:37:20Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "27028009284",
+    "workflow_run_id": "27030311303",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "reuse",
     "json_report_path": "reporting/reuse-report.json",
-    "commit": "80100ae22fa1aeaca5139a3762148f5b2f2e80d5",
+    "commit": "c489dfa0b905460fd95f5ec527d29ba8d452a8cd",
     "path": "reporting/reuse-report.json",
     "report_path": "reporting/reuse-report.json"
   },
@@ -332,7 +332,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-06-05T15:14:52Z",
+      "pushed_at": "2026-06-05T16:51:16Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": false,
@@ -771,7 +771,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-06-05T15:31:55Z",
+      "pushed_at": "2026-06-05T17:15:27Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -946,7 +946,7 @@
       "repo": "reusable-ci",
       "url": "https://github.com/diggsweden/reusable-ci",
       "default_branch": "main",
-      "pushed_at": "2026-06-05T08:30:19Z",
+      "pushed_at": "2026-06-05T17:03:56Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1414,7 +1414,7 @@
       "repo": "wallet-r2ps",
       "url": "https://github.com/diggsweden/wallet-r2ps",
       "default_branch": "main",
-      "pushed_at": "2026-06-05T16:25:04Z",
+      "pushed_at": "2026-06-05T16:57:19Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1583,5 +1583,5 @@
       "publiccode_license": null
     }
   ],
-  "imported_at": "2026-06-05T17:15:06Z"
+  "imported_at": "2026-06-05T18:07:21Z"
 }

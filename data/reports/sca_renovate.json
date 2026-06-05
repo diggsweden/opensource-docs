@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-05T16:50:30Z",
+  "generated_at": "2026-06-05T17:38:27Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "27028009284",
+    "workflow_run_id": "27030311303",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "sca_renovate",
     "json_report_path": "reporting/sca-renovate-report.json",
@@ -13,7 +13,7 @@
       "local>diggsweden/.github:renovate-base",
       "github>diggsweden/.github//renovate-base.json"
     ],
-    "commit": "80100ae22fa1aeaca5139a3762148f5b2f2e80d5",
+    "commit": "c489dfa0b905460fd95f5ec527d29ba8d452a8cd",
     "path": "reporting/sca-renovate-report.json",
     "report_path": "reporting/sca-renovate-report.json"
   },
@@ -247,7 +247,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-06-05T15:14:52Z",
+      "pushed_at": "2026-06-05T16:51:16Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -558,7 +558,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-06-05T15:31:55Z",
+      "pushed_at": "2026-06-05T17:15:27Z",
       "renovate_config_present": false,
       "renovate_config_status": "missing",
       "renovate_config_path": null,
@@ -681,7 +681,7 @@
       "repo": "reusable-ci",
       "url": "https://github.com/diggsweden/reusable-ci",
       "default_branch": "main",
-      "pushed_at": "2026-06-05T08:30:19Z",
+      "pushed_at": "2026-06-05T17:03:56Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -1016,7 +1016,7 @@
       "repo": "wallet-r2ps",
       "url": "https://github.com/diggsweden/wallet-r2ps",
       "default_branch": "main",
-      "pushed_at": "2026-06-05T16:25:04Z",
+      "pushed_at": "2026-06-05T16:57:19Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -1139,5 +1139,5 @@
       "renovate_dashboard_url": "https://github.com/diggsweden/wallet-verifier-test-web/issues/28"
     }
   ],
-  "imported_at": "2026-06-05T17:15:06Z"
+  "imported_at": "2026-06-05T18:07:21Z"
 }
