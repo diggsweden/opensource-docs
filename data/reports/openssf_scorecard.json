@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-09T15:17:57Z",
+  "generated_at": "2026-06-09T16:55:51Z",
   "latest_scorecard_at": "2026-06-09T13:54:33Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "27215423965",
+    "workflow_run_id": "27222082101",
     "scope_path": "reporting/scope.json",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "openssf_scorecard",
     "markdown_report_path": "reporting/openssf-scorecard-report.md",
     "json_report_path": "reporting/openssf-scorecard-report.json",
-    "commit": "352c6d322bfa1db0c2b61bc083a9fd1b90f36390",
+    "commit": "39e14aaa599e2e00006ddadade88be3ba75ff432",
     "path": "reporting/openssf-scorecard-report.json",
     "report_path": "reporting/openssf-scorecard-report.json"
   },
@@ -886,5 +886,5 @@
       "report_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/wallet-verifier-test-web/commit/bf41f8d650b494be931bed70c6b5ee953fa7dde4"
     }
   ],
-  "imported_at": "2026-06-09T15:31:51Z"
+  "imported_at": "2026-06-09T17:16:42Z"
 }
