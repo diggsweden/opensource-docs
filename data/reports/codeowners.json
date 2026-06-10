@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-10T18:05:59Z",
+  "generated_at": "2026-06-10T19:51:16Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "27295980509",
+    "workflow_run_id": "27301976530",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "codeowners",
     "json_report_path": "reporting/codeowners-report.json",
@@ -13,7 +13,7 @@
       "CODEOWNERS",
       "docs/CODEOWNERS"
     ],
-    "commit": "bfc7170a3685b39e1dddd1a1758793ab87999cd3",
+    "commit": "a1900779039a6fd85c7e89380303f878eedb3a6d",
     "path": "reporting/codeowners-report.json",
     "report_path": "reporting/codeowners-report.json"
   },
@@ -194,7 +194,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-06-10T16:21:02Z",
+      "pushed_at": "2026-06-10T18:06:22Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -427,7 +427,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-06-10T16:42:27Z",
+      "pushed_at": "2026-06-10T18:19:48Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -677,7 +677,7 @@
       "repo": "wallet-app-ios",
       "url": "https://github.com/diggsweden/wallet-app-ios",
       "default_branch": "main",
-      "pushed_at": "2026-06-09T13:54:15Z",
+      "pushed_at": "2026-06-10T19:00:59Z",
       "codeowners_present": false,
       "codeowners_status": "missing",
       "codeowners_path": null,
@@ -883,5 +883,5 @@
       ]
     }
   ],
-  "imported_at": "2026-06-10T18:19:33Z"
+  "imported_at": "2026-06-10T20:15:40Z"
 }
