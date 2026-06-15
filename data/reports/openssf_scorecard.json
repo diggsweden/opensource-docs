@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-14T20:30:10Z",
-  "latest_scorecard_at": "2026-06-14T02:46:48Z",
+  "generated_at": "2026-06-15T04:34:13Z",
+  "latest_scorecard_at": "2026-06-15T00:32:25Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "27511111919",
+    "workflow_run_id": "27524216992",
     "scope_path": "reporting/scope.json",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "openssf_scorecard",
     "markdown_report_path": "reporting/openssf-scorecard-report.md",
     "json_report_path": "reporting/openssf-scorecard-report.json",
-    "commit": "5c28f6380cee193b1d43e935b59efc4bfd1e51bd",
+    "commit": "2c7845fd16bfc9e45a6c2a0bcb12d655ede04382",
     "path": "reporting/openssf-scorecard-report.json",
     "report_path": "reporting/openssf-scorecard-report.json"
   },
@@ -339,16 +339,16 @@
       "score_status": "available",
       "workflow_status": "missing_approved_workflow",
       "status": "available",
-      "date": "2026-06-13T02:16:06Z",
-      "commit": "eb34bedd738b1dfd0e183ee2100f56f05582df66",
-      "commit_short": "eb34bed",
-      "commit_url": "https://github.com/diggsweden/mla/commit/eb34bedd738b1dfd0e183ee2100f56f05582df66",
+      "date": "2026-06-15T00:32:25Z",
+      "commit": "8876db65e284f19770f53f453e1f7fe2fc68bf7f",
+      "commit_short": "8876db6",
+      "commit_url": "https://github.com/diggsweden/mla/commit/8876db65e284f19770f53f453e1f7fe2fc68bf7f",
       "previous_score": 8.4,
       "previous_date": "2026-06-13T02:16:06Z",
       "previous_commit": "eb34bedd738b1dfd0e183ee2100f56f05582df66",
       "delta": 0,
-      "details_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/mla/compare/eb34bedd738b1dfd0e183ee2100f56f05582df66/eb34bedd738b1dfd0e183ee2100f56f05582df66",
-      "report_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/mla/commit/eb34bedd738b1dfd0e183ee2100f56f05582df66"
+      "details_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/mla/compare/eb34bedd738b1dfd0e183ee2100f56f05582df66/8876db65e284f19770f53f453e1f7fe2fc68bf7f",
+      "report_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/mla/commit/8876db65e284f19770f53f453e1f7fe2fc68bf7f"
     },
     {
       "name": "diggsweden/opaque-lib-java",
@@ -886,5 +886,5 @@
       "report_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/wallet-verifier-test-web/commit/c7e996d3b40a458d1e0680e76b1065616b36ed12"
     }
   ],
-  "imported_at": "2026-06-14T20:51:46Z"
+  "imported_at": "2026-06-15T05:12:49Z"
 }
