@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T09:09:02Z",
+  "generated_at": "2026-06-15T12:03:34Z",
   "latest_scorecard_at": "2026-06-15T00:32:25Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "27535818480",
+    "workflow_run_id": "27544871327",
     "scope_path": "reporting/scope.json",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "openssf_scorecard",
     "markdown_report_path": "reporting/openssf-scorecard-report.md",
     "json_report_path": "reporting/openssf-scorecard-report.json",
-    "commit": "6d6b6cb2031787dbb11f50d879c777781572cb16",
+    "commit": "ed295e63ac40183fa2f72843ce17336b7556c8f4",
     "path": "reporting/openssf-scorecard-report.json",
     "report_path": "reporting/openssf-scorecard-report.json"
   },
@@ -19,9 +19,9 @@
     "total_repositories": 40,
     "repositories_with_score": 22,
     "repositories_without_score": 18,
-    "repositories_with_approved_workflow": 19,
+    "repositories_with_approved_workflow": 18,
     "repositories_without_approved_workflow": 20,
-    "repositories_with_unknown_workflow": 1,
+    "repositories_with_unknown_workflow": 2,
     "average_score": 7.4,
     "lowest_score": 5.1,
     "highest_score": 8.6
@@ -659,7 +659,7 @@
       "url": "https://github.com/diggsweden/wallet-attribute-attestation",
       "score": 7,
       "score_status": "available",
-      "workflow_status": "approved",
+      "workflow_status": "unknown",
       "status": "available",
       "date": "2026-06-13T03:36:25Z",
       "commit": "b43a674b35040c270ec16552f7f0179a562b4361",
@@ -886,5 +886,5 @@
       "report_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/wallet-verifier-test-web/commit/c7e996d3b40a458d1e0680e76b1065616b36ed12"
     }
   ],
-  "imported_at": "2026-06-15T09:36:06Z"
+  "imported_at": "2026-06-15T12:39:47Z"
 }
