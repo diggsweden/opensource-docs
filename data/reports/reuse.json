@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T19:24:21Z",
+  "generated_at": "2026-06-16T04:33:40Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "27570687977",
+    "workflow_run_id": "27594343336",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "reuse",
     "json_report_path": "reporting/reuse-report.json",
-    "commit": "9bf9c7ca6e59b48db12997279e96be59fafc606f",
+    "commit": "1efe0d1fc6c50c5d0b726d33943571dbdb96bd9a",
     "path": "reporting/reuse-report.json",
     "report_path": "reporting/reuse-report.json"
   },
@@ -304,7 +304,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-06-15T17:43:28Z",
+      "pushed_at": "2026-06-15T21:06:11Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": false,
@@ -592,7 +592,7 @@
       "repo": "opaque-lib-java",
       "url": "https://github.com/diggsweden/opaque-lib-java",
       "default_branch": "main",
-      "pushed_at": "2026-06-09T16:01:14Z",
+      "pushed_at": "2026-06-15T22:58:34Z",
       "github_license": "EUPL-1.2",
       "license_file_present": true,
       "licenses_dir_present": true,
@@ -656,7 +656,7 @@
       "repo": "open-source-project-template",
       "url": "https://github.com/diggsweden/open-source-project-template",
       "default_branch": "main",
-      "pushed_at": "2026-06-13T19:59:48Z",
+      "pushed_at": "2026-06-16T04:00:35Z",
       "github_license": "CC0-1.0",
       "license_file_present": true,
       "licenses_dir_present": true,
@@ -687,7 +687,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-06-15T18:52:56Z",
+      "pushed_at": "2026-06-15T20:34:47Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -834,7 +834,7 @@
       "repo": "reusable-ci",
       "url": "https://github.com/diggsweden/reusable-ci",
       "default_branch": "main",
-      "pushed_at": "2026-06-15T15:25:39Z",
+      "pushed_at": "2026-06-16T02:38:32Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1102,7 +1102,7 @@
       "repo": "wallet-app-ios",
       "url": "https://github.com/diggsweden/wallet-app-ios",
       "default_branch": "main",
-      "pushed_at": "2026-06-15T11:17:24Z",
+      "pushed_at": "2026-06-15T20:16:15Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1438,5 +1438,5 @@
       "publiccode_license": null
     }
   ],
-  "imported_at": "2026-06-15T20:34:33Z"
+  "imported_at": "2026-06-16T05:13:02Z"
 }
