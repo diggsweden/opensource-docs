@@ -117,6 +117,7 @@ Ett urval av vanliga licensval enligt riktlinjen och [Diggs rekommendation om ö
 
 - [opensource.guide](https://opensource.guide): utbildning i öppen programvara
 - [EU:s strategi för öppen källkod](https://digital-strategy.ec.europa.eu/en/policies/open-source-strategy): refereras i policyn; ingår i EU:s [paket för teknisk suveränitet](https://digital-strategy.ec.europa.eu/en/policies/eu-tech-sovereignty)
+- [OSOR Open Source Handbook](https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/reports-and-guidelines)
 
 ### Svensk offentlig sektor
 
@@ -137,6 +138,7 @@ Ett urval av vanliga licensval enligt riktlinjen och [Diggs rekommendation om ö
 
 ### Internationella resurser
 
+- [EU Open Source Stratgy](https://digital-strategy.ec.europa.eu/en/policies/open-source-strategy)
 - [EU Open Source Solutions Catalogue](https://interoperable-europe.ec.europa.eu/eu-oss-catalogue): katalog över återanvändbara öppna lösningar för offentlig sektor i EU
 - [Interoperable Europe Portal](https://interoperable-europe.ec.europa.eu/): EU:s plattform för öppen programvara och interoperabilitet
 - [Att stärka Europas tekniska suveränitet](https://digital-strategy.ec.europa.eu/en/policies/eu-tech-sovereignty): EU-kommissionens paket för teknisk suveränitet (antaget juni 2026); omfattar bland annat EU:s strategi för öppen källkod

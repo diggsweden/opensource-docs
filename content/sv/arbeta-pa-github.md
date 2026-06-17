@@ -221,6 +221,17 @@ För ett praktiskt exempel på en release-pipeline som använder dem, se [`diggs
   Konkret exempel: `2026 Digg - Agency for Digital Government`.
   Se även [REUSE FAQ](https://reuse.software/faq/) för ytterligare information om licensheaders.
 
+### Vad innebär en CODEOWNERS-fil?
+
+  En CODEOWNERS-fil talar om vem eller vilka som ansvarar för att förvalta delar av koden i ett kodförråd. Namnet kan lätt missförstås, eftersom det låter som att filen beskriver vem som äger koden. Det gör den inte. 
+  Ett mer beskrivande namn hade egentligen kunnat vara exemplevis MAINTAINERS (underhållsansvariga), eftersom syftet är förvaltning och ansvar än juridiskt ägande. Men eftersom CODEOWNERS är ett etablerat namn i utvecklingsplattformar för det här syftet använder vi det också. Det viktiga är att filen pekar ut rätt underhållsansvariga och; inte juridiska ägare av koden.
+
+  CODEOWNERS används för: att visa vilka personer, team eller funktioner som ska granska, godkänna eller agera på ändringar i ett kodförråd och vem en administratör ska vända sig till när något behöver hanteras, som uppdateringar, förändringar och säkerhetsproblem. Det kan vara ett internt team, ett konsultteam eller en annan utsedd grupp beroende på hur repositoryt förvaltas.
+
+  Juridisk ägande deklareras istället ägande i licensheadrar och licensfiler, punkten ovan denna fråga.
+
+
+
 ### Privata och publika projekt
 
 * **Varför finns privata projekt på Diggs GitHub? Är det inte en plattform för öppen programvara?**

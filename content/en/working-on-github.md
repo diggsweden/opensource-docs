@@ -198,6 +198,15 @@ For a practical example of a release pipeline that uses them, see [`diggsweden/c
   Concrete example: `2026 Digg - Agency for Digital Government`.
   See also the [REUSE FAQ](https://reuse.software/faq/) for further information on licence headers.
 
+### What is a CODEOWNERS file?
+
+  A CODEOWNERS file states who is responsible for maintaining parts of the code in a repository. The name is easily misunderstood, because it sounds as if the file describes who owns the code. It does not.
+  A more descriptive name could really have been something like MAINTAINERS, since the purpose is maintenance and responsibility rather than legal ownership. But because CODEOWNERS is an established name for this purpose on development platforms, we use it too. The important thing is that the file points out the right maintainers — not the legal owners of the code.
+
+  CODEOWNERS is used to show which people, teams or functions should review, approve or act on changes in a repository, and who an administrator should turn to when something needs to be handled, such as updates, changes and security issues. It can be an internal team, a consultancy team or another designated group depending on how the repository is maintained.
+
+  Legal ownership is instead declared in licence headers and licence files, as described in the question above.
+
 ### Private and public projects
 
 * **Why are there private projects on Digg's GitHub? Is it not a platform for open source software?**

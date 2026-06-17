@@ -117,6 +117,7 @@ A selection of common licence choices per the guidelines and [Digg's recommendat
 
 - [opensource.guide](https://opensource.guide): training in open source
 - [EU Open Source Strategy](https://digital-strategy.ec.europa.eu/en/policies/open-source-strategy): referenced in the policy; part of the EU's [tech sovereignty package](https://digital-strategy.ec.europa.eu/en/policies/eu-tech-sovereignty)
+- [OSOR Open Source Handbook](https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/reports-and-guidelines)
 
 ### Swedish public sector
 
@@ -137,6 +138,7 @@ A selection of common licence choices per the guidelines and [Digg's recommendat
 
 ### International resources
 
+- [EU Open Source Strategy](https://digital-strategy.ec.europa.eu/en/policies/open-source-strategy)
 - [EU Open Source Solutions Catalogue](https://interoperable-europe.ec.europa.eu/eu-oss-catalogue): catalogue of reusable open source solutions for the EU public sector
 - [Interoperable Europe Portal](https://interoperable-europe.ec.europa.eu/): the EU's platform for open source and interoperability
 - [Strengthening Europe's Tech Sovereignty](https://digital-strategy.ec.europa.eu/en/policies/eu-tech-sovereignty): the European Commission's package for digital independence (adopted June 2026); it includes the EU Open Source Strategy among other initiatives
