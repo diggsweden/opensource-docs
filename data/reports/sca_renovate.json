@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-17T08:46:27Z",
+  "generated_at": "2026-06-17T10:53:05Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "27676943418",
+    "workflow_run_id": "27683735483",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "sca_renovate",
     "json_report_path": "reporting/sca-renovate-report.json",
@@ -13,18 +13,18 @@
       "local>diggsweden/.github:renovate-base",
       "github>diggsweden/.github//renovate-base.json"
     ],
-    "commit": "d24471cfd655551ab97da6a1cac2b37a35f35506",
+    "commit": "ab747e9b81570a13f30ab7790675bf219c3624f8",
     "path": "reporting/sca-renovate-report.json",
     "report_path": "reporting/sca-renovate-report.json"
   },
   "summary": {
-    "total_repositories": 47,
-    "repositories_with_renovate_config": 22,
-    "repositories_without_renovate_config": 25,
+    "total_repositories": 40,
+    "repositories_with_renovate_config": 20,
+    "repositories_without_renovate_config": 20,
     "repositories_with_unknown_renovate_config": 0,
-    "repositories_using_base_preset": 19,
+    "repositories_using_base_preset": 17,
     "repositories_missing_base_preset": 3,
-    "repositories_with_dependency_dashboard_issue": 21
+    "repositories_with_dependency_dashboard_issue": 19
   },
   "repositories": [
     {
@@ -227,7 +227,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-06-17T06:46:38Z",
+      "pushed_at": "2026-06-17T10:36:53Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -241,26 +241,6 @@
       ],
       "renovate_dashboard_found": true,
       "renovate_dashboard_url": "https://github.com/diggsweden/digg-scorecard-monitor/issues/14"
-    },
-    {
-      "name": "diggsweden/ena-authorization",
-      "platform": "github.com",
-      "org": "diggsweden",
-      "repo": "ena-authorization",
-      "url": "https://github.com/diggsweden/ena-authorization",
-      "default_branch": "main",
-      "pushed_at": "2025-09-11T20:40:59Z",
-      "renovate_config_present": false,
-      "renovate_config_status": "missing",
-      "renovate_config_path": null,
-      "renovate_config_url": null,
-      "renovate_base_preset": "local>diggsweden/.github:renovate-base",
-      "renovate_matched_base_preset": null,
-      "renovate_uses_base_preset": null,
-      "renovate_config_valid_json": null,
-      "enabled_managers": null,
-      "renovate_dashboard_found": false,
-      "renovate_dashboard_url": null
     },
     {
       "name": "diggsweden/eudi-srv-pid-issuer",
@@ -301,29 +281,6 @@
       "enabled_managers": null,
       "renovate_dashboard_found": false,
       "renovate_dashboard_url": null
-    },
-    {
-      "name": "diggsweden/eudiw-wallet-token-lib",
-      "platform": "github.com",
-      "org": "diggsweden",
-      "repo": "eudiw-wallet-token-lib",
-      "url": "https://github.com/diggsweden/eudiw-wallet-token-lib",
-      "default_branch": "main",
-      "pushed_at": "2026-06-09T20:17:48Z",
-      "renovate_config_present": true,
-      "renovate_config_status": "present",
-      "renovate_config_path": "renovate.json",
-      "renovate_config_url": "https://github.com/diggsweden/eudiw-wallet-token-lib/blob/main/renovate.json",
-      "renovate_base_preset": "local>diggsweden/.github:renovate-base",
-      "renovate_matched_base_preset": "local>diggsweden/.github:renovate-base",
-      "renovate_uses_base_preset": true,
-      "renovate_config_valid_json": true,
-      "enabled_managers": [
-        "github-actions",
-        "maven"
-      ],
-      "renovate_dashboard_found": true,
-      "renovate_dashboard_url": "https://github.com/diggsweden/eudiw-wallet-token-lib/issues/4"
     },
     {
       "name": "diggsweden/haskell-digg-oidc",
@@ -426,29 +383,6 @@
       "renovate_dashboard_url": "https://github.com/diggsweden/mla/issues/83"
     },
     {
-      "name": "diggsweden/opaque-lib-java",
-      "platform": "github.com",
-      "org": "diggsweden",
-      "repo": "opaque-lib-java",
-      "url": "https://github.com/diggsweden/opaque-lib-java",
-      "default_branch": "main",
-      "pushed_at": "2026-06-16T21:54:43Z",
-      "renovate_config_present": true,
-      "renovate_config_status": "present",
-      "renovate_config_path": "renovate.json",
-      "renovate_config_url": "https://github.com/diggsweden/opaque-lib-java/blob/main/renovate.json",
-      "renovate_base_preset": "local>diggsweden/.github:renovate-base",
-      "renovate_matched_base_preset": "local>diggsweden/.github:renovate-base",
-      "renovate_uses_base_preset": true,
-      "renovate_config_valid_json": true,
-      "enabled_managers": [
-        "github-actions",
-        "maven"
-      ],
-      "renovate_dashboard_found": true,
-      "renovate_dashboard_url": "https://github.com/diggsweden/opaque-lib-java/issues/3"
-    },
-    {
       "name": "diggsweden/opaque_ke_uniffi",
       "platform": "github.com",
       "org": "diggsweden",
@@ -498,7 +432,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-06-17T08:21:32Z",
+      "pushed_at": "2026-06-17T09:09:56Z",
       "renovate_config_present": false,
       "renovate_config_status": "missing",
       "renovate_config_path": null,
@@ -519,46 +453,6 @@
       "url": "https://github.com/diggsweden/persistent-identifiers-investigation",
       "default_branch": "main",
       "pushed_at": "2026-02-25T15:52:37Z",
-      "renovate_config_present": false,
-      "renovate_config_status": "missing",
-      "renovate_config_path": null,
-      "renovate_config_url": null,
-      "renovate_base_preset": "local>diggsweden/.github:renovate-base",
-      "renovate_matched_base_preset": null,
-      "renovate_uses_base_preset": null,
-      "renovate_config_valid_json": null,
-      "enabled_managers": null,
-      "renovate_dashboard_found": false,
-      "renovate_dashboard_url": null
-    },
-    {
-      "name": "diggsweden/r2ps-base",
-      "platform": "github.com",
-      "org": "diggsweden",
-      "repo": "r2ps-base",
-      "url": "https://github.com/diggsweden/r2ps-base",
-      "default_branch": "main",
-      "pushed_at": "2026-05-06T08:54:48Z",
-      "renovate_config_present": false,
-      "renovate_config_status": "missing",
-      "renovate_config_path": null,
-      "renovate_config_url": null,
-      "renovate_base_preset": "local>diggsweden/.github:renovate-base",
-      "renovate_matched_base_preset": null,
-      "renovate_uses_base_preset": null,
-      "renovate_config_valid_json": null,
-      "enabled_managers": null,
-      "renovate_dashboard_found": false,
-      "renovate_dashboard_url": null
-    },
-    {
-      "name": "diggsweden/r2ps-demo",
-      "platform": "github.com",
-      "org": "diggsweden",
-      "repo": "r2ps-demo",
-      "url": "https://github.com/diggsweden/r2ps-demo",
-      "default_branch": "main",
-      "pushed_at": "2026-01-08T13:07:27Z",
       "renovate_config_present": false,
       "renovate_config_status": "missing",
       "renovate_config_path": null,
@@ -928,26 +822,6 @@
       "renovate_dashboard_url": "https://github.com/diggsweden/wallet-r2ps/issues/75"
     },
     {
-      "name": "diggsweden/wallet-r2ps-secure-channel",
-      "platform": "github.com",
-      "org": "diggsweden",
-      "repo": "wallet-r2ps-secure-channel",
-      "url": "https://github.com/diggsweden/wallet-r2ps-secure-channel",
-      "default_branch": "main",
-      "pushed_at": "2025-10-19T07:25:17Z",
-      "renovate_config_present": false,
-      "renovate_config_status": "missing",
-      "renovate_config_path": null,
-      "renovate_config_url": null,
-      "renovate_base_preset": "local>diggsweden/.github:renovate-base",
-      "renovate_matched_base_preset": null,
-      "renovate_uses_base_preset": null,
-      "renovate_config_valid_json": null,
-      "enabled_managers": null,
-      "renovate_dashboard_found": false,
-      "renovate_dashboard_url": null
-    },
-    {
       "name": "diggsweden/wallet-r2ps-specification",
       "platform": "github.com",
       "org": "diggsweden",
@@ -955,26 +829,6 @@
       "url": "https://github.com/diggsweden/wallet-r2ps-specification",
       "default_branch": "main",
       "pushed_at": "2026-02-10T15:33:44Z",
-      "renovate_config_present": false,
-      "renovate_config_status": "missing",
-      "renovate_config_path": null,
-      "renovate_config_url": null,
-      "renovate_base_preset": "local>diggsweden/.github:renovate-base",
-      "renovate_matched_base_preset": null,
-      "renovate_uses_base_preset": null,
-      "renovate_config_valid_json": null,
-      "enabled_managers": null,
-      "renovate_dashboard_found": false,
-      "renovate_dashboard_url": null
-    },
-    {
-      "name": "diggsweden/wallet-technical-specifications",
-      "platform": "github.com",
-      "org": "diggsweden",
-      "repo": "wallet-technical-specifications",
-      "url": "https://github.com/diggsweden/wallet-technical-specifications",
-      "default_branch": "main",
-      "pushed_at": "2026-01-26T15:26:55Z",
       "renovate_config_present": false,
       "renovate_config_status": "missing",
       "renovate_config_path": null,
@@ -1033,5 +887,5 @@
       "renovate_dashboard_url": "https://github.com/diggsweden/wallet-verifier-test-web/issues/28"
     }
   ],
-  "imported_at": "2026-06-17T09:09:40Z"
+  "imported_at": "2026-06-17T10:55:56Z"
 }
