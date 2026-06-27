@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-27T14:33:22Z",
+  "generated_at": "2026-06-27T15:28:40Z",
   "latest_scorecard_at": "2026-06-27T04:08:38Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "28292141748",
+    "workflow_run_id": "28293477198",
     "scope_path": "reporting/scope.json",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "openssf_scorecard",
     "markdown_report_path": "reporting/openssf-scorecard-report.md",
     "json_report_path": "reporting/openssf-scorecard-report.json",
-    "commit": "ef3e2be696f18922f803b85136d5775d92deb488",
+    "commit": "8a49f9e45316e51dd4d2b1d2e869b2377a0b2d98",
     "path": "reporting/openssf-scorecard-report.json",
     "report_path": "reporting/openssf-scorecard-report.json"
   },
@@ -20,8 +20,8 @@
     "repositories_with_score": 22,
     "repositories_without_score": 16,
     "repositories_with_approved_workflow": 15,
-    "repositories_without_approved_workflow": 18,
-    "repositories_with_unknown_workflow": 5,
+    "repositories_without_approved_workflow": 17,
+    "repositories_with_unknown_workflow": 6,
     "average_score": 7.3,
     "lowest_score": 5,
     "highest_score": 8.5
@@ -422,9 +422,9 @@
       "url": "https://github.com/diggsweden/opensource-docs",
       "score": null,
       "score_status": "missing_scorecard_data",
-      "workflow_status": "missing_approved_workflow",
+      "workflow_status": "unknown",
       "status": "missing_scorecard_data",
-      "reason": "approved_scorecard_workflow_missing",
+      "reason": "scorecard_data_unavailable",
       "date": null,
       "commit": null,
       "commit_short": null,
@@ -842,5 +842,5 @@
       "report_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/wallet-verifier-test-web/commit/c7e996d3b40a458d1e0680e76b1065616b36ed12"
     }
   ],
-  "imported_at": "2026-06-27T14:59:33Z"
+  "imported_at": "2026-06-27T15:52:02Z"
 }
