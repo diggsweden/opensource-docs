@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-05T20:54:38Z",
+  "generated_at": "2026-07-06T07:09:00Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "28754570261",
+    "workflow_run_id": "28774129422",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "reuse",
     "json_report_path": "reporting/reuse-report.json",
-    "commit": "3c10446a692adeadc199b6a299f2924530353c3d",
+    "commit": "6fe513888be1ac1755d14609d30c72058a6c6611",
     "path": "reporting/reuse-report.json",
     "report_path": "reporting/reuse-report.json"
   },
@@ -304,7 +304,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-07-05T19:11:27Z",
+      "pushed_at": "2026-07-05T20:56:27Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": false,
@@ -500,7 +500,7 @@
       "repo": "mla",
       "url": "https://github.com/diggsweden/mla",
       "default_branch": "main",
-      "pushed_at": "2026-07-04T13:03:36Z",
+      "pushed_at": "2026-07-06T04:55:12Z",
       "github_license": "EUPL-1.2",
       "license_file_present": true,
       "licenses_dir_present": true,
@@ -595,7 +595,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-07-05T19:48:16Z",
+      "pushed_at": "2026-07-05T21:31:08Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1121,7 +1121,7 @@
       "repo": "wallet-r2ps",
       "url": "https://github.com/diggsweden/wallet-r2ps",
       "default_branch": "main",
-      "pushed_at": "2026-07-03T07:39:03Z",
+      "pushed_at": "2026-07-05T22:39:12Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1234,5 +1234,5 @@
       "publiccode_license": null
     }
   ],
-  "imported_at": "2026-07-05T21:30:54Z"
+  "imported_at": "2026-07-06T07:58:39Z"
 }
