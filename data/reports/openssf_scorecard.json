@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-10T06:41:04Z",
+  "generated_at": "2026-07-10T10:20:50Z",
   "latest_scorecard_at": "2026-07-10T05:34:27Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "29074450781",
+    "workflow_run_id": "29085992792",
     "scope_path": "reporting/scope.json",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "openssf_scorecard",
     "markdown_report_path": "reporting/openssf-scorecard-report.md",
     "json_report_path": "reporting/openssf-scorecard-report.json",
-    "commit": "f3f0ff46ceaecc9f6f3ef94339232ab34b14a385",
+    "commit": "4cafc01016546f608cd2d3c04a7c674204867371",
     "path": "reporting/openssf-scorecard-report.json",
     "report_path": "reporting/openssf-scorecard-report.json"
   },
@@ -20,8 +20,8 @@
     "repositories_with_score": 22,
     "repositories_without_score": 16,
     "repositories_with_approved_workflow": 15,
-    "repositories_without_approved_workflow": 18,
-    "repositories_with_unknown_workflow": 5,
+    "repositories_without_approved_workflow": 17,
+    "repositories_with_unknown_workflow": 6,
     "average_score": 7.3,
     "lowest_score": 5.8,
     "highest_score": 8.5
@@ -574,9 +574,9 @@
       "url": "https://github.com/diggsweden/SwiftAccessMechanism",
       "score": null,
       "score_status": "missing_scorecard_data",
-      "workflow_status": "missing_approved_workflow",
+      "workflow_status": "unknown",
       "status": "missing_scorecard_data",
-      "reason": "approved_scorecard_workflow_missing",
+      "reason": "scorecard_data_unavailable",
       "date": null,
       "commit": null,
       "commit_short": null,
@@ -842,5 +842,5 @@
       "report_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/wallet-verifier-test-web/commit/12a0d7fb5e2eb62b49bbfe73ba4847dd545a6a50"
     }
   ],
-  "imported_at": "2026-07-10T06:58:42Z"
+  "imported_at": "2026-07-10T10:31:27Z"
 }
