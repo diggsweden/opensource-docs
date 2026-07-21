@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-21T13:28:53Z",
+  "generated_at": "2026-07-21T15:40:19Z",
   "latest_scorecard_at": "2026-07-21T09:28:22Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "29834564771",
+    "workflow_run_id": "29845021273",
     "scope_path": "reporting/scope.json",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "openssf_scorecard",
     "markdown_report_path": "reporting/openssf-scorecard-report.md",
     "json_report_path": "reporting/openssf-scorecard-report.json",
-    "commit": "ad94beef7b1325a4e7f29addddb0c4c1114bf6bc",
+    "commit": "6e4614be623912fbcd066f9e61ae9e88a7517567",
     "path": "reporting/openssf-scorecard-report.json",
     "report_path": "reporting/openssf-scorecard-report.json"
   },
   "summary": {
-    "total_repositories": 38,
+    "total_repositories": 39,
     "repositories_with_score": 22,
-    "repositories_without_score": 16,
-    "repositories_with_approved_workflow": 15,
+    "repositories_without_score": 17,
+    "repositories_with_approved_workflow": 16,
     "repositories_without_approved_workflow": 18,
     "repositories_with_unknown_workflow": 5,
     "average_score": 7.3,
@@ -715,6 +715,28 @@
       "report_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/wallet-client-gateway/commit/478bf32cd0ee5909cd657319381d6326d9b9c473"
     },
     {
+      "name": "diggsweden/wallet-dss-cli",
+      "platform": "github.com",
+      "org": "diggsweden",
+      "repo": "wallet-dss-cli",
+      "url": "https://github.com/diggsweden/wallet-dss-cli",
+      "score": null,
+      "score_status": "missing_scorecard_data",
+      "workflow_status": "approved",
+      "status": "missing_scorecard_data",
+      "reason": "scorecard_data_unavailable",
+      "date": null,
+      "commit": null,
+      "commit_short": null,
+      "commit_url": null,
+      "previous_score": null,
+      "previous_date": null,
+      "previous_commit": null,
+      "delta": null,
+      "details_url": null,
+      "report_url": null
+    },
+    {
       "name": "diggsweden/wallet-ecosystem",
       "platform": "github.com",
       "org": "diggsweden",
@@ -842,5 +864,5 @@
       "report_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/wallet-verifier-test-web/commit/924fda829aa5bcf12af7d321d7a033dfc4a56b2f"
     }
   ],
-  "imported_at": "2026-07-21T15:19:32Z"
+  "imported_at": "2026-07-21T16:50:38Z"
 }
