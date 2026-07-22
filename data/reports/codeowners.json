@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-22T13:41:43Z",
+  "generated_at": "2026-07-22T15:30:44Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "29924945515",
+    "workflow_run_id": "29933555327",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "codeowners",
     "json_report_path": "reporting/codeowners-report.json",
@@ -13,7 +13,7 @@
       "CODEOWNERS",
       "docs/CODEOWNERS"
     ],
-    "commit": "f4fd86db9abe77e82917e16d75e172bfb1e4a673",
+    "commit": "dfe9cbaccb8566cd6ac5c53b1cc73310f5795c5b",
     "path": "reporting/codeowners-report.json",
     "report_path": "reporting/codeowners-report.json"
   },
@@ -105,7 +105,7 @@
       "repo": "dataportal-web",
       "url": "https://github.com/diggsweden/dataportal-web",
       "default_branch": "main",
-      "pushed_at": "2026-07-22T12:34:57Z",
+      "pushed_at": "2026-07-22T13:40:31Z",
       "codeowners_present": false,
       "codeowners_status": "missing",
       "codeowners_path": null,
@@ -196,7 +196,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-07-22T11:07:36Z",
+      "pushed_at": "2026-07-22T13:41:59Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -380,7 +380,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-07-22T11:22:52Z",
+      "pushed_at": "2026-07-22T15:19:05Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -602,7 +602,7 @@
       "repo": "wallet-app-ios",
       "url": "https://github.com/diggsweden/wallet-app-ios",
       "default_branch": "main",
-      "pushed_at": "2026-07-22T13:17:29Z",
+      "pushed_at": "2026-07-22T15:22:52Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -657,7 +657,7 @@
       "repo": "wallet-dss-cli",
       "url": "https://github.com/diggsweden/wallet-dss-cli",
       "default_branch": "main",
-      "pushed_at": "2026-07-22T12:45:04Z",
+      "pushed_at": "2026-07-22T14:09:27Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -782,5 +782,5 @@
       ]
     }
   ],
-  "imported_at": "2026-07-22T15:18:47Z"
+  "imported_at": "2026-07-22T16:53:35Z"
 }
