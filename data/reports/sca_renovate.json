@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T13:49:43Z",
+  "generated_at": "2026-07-30T15:49:52Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "30548578451",
+    "workflow_run_id": "30558477164",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "sca_renovate",
     "json_report_path": "reporting/sca-renovate-report.json",
@@ -13,7 +13,7 @@
       "local>diggsweden/.github:renovate-base",
       "github>diggsweden/.github//renovate-base.json"
     ],
-    "commit": "07612188c95ea04344e5093875a3d60afe3184d9",
+    "commit": "96f4813e7e60be50d3e637e7f68bed60d1ce885b",
     "path": "reporting/sca-renovate-report.json",
     "report_path": "reporting/sca-renovate-report.json"
   },
@@ -119,7 +119,7 @@
       "repo": "dataportal-web",
       "url": "https://github.com/diggsweden/dataportal-web",
       "default_branch": "main",
-      "pushed_at": "2026-07-30T13:38:51Z",
+      "pushed_at": "2026-07-30T14:01:18Z",
       "renovate_config_present": false,
       "renovate_config_status": "missing",
       "renovate_config_path": null,
@@ -227,7 +227,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-07-30T11:05:16Z",
+      "pushed_at": "2026-07-30T13:51:06Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -369,7 +369,7 @@
       "repo": "mla",
       "url": "https://github.com/diggsweden/mla",
       "default_branch": "main",
-      "pushed_at": "2026-07-30T10:09:06Z",
+      "pushed_at": "2026-07-30T15:11:50Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -432,7 +432,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-07-30T11:26:06Z",
+      "pushed_at": "2026-07-30T15:28:09Z",
       "renovate_config_present": false,
       "renovate_config_status": "missing",
       "renovate_config_path": null,
@@ -639,7 +639,7 @@
       "repo": "wallet-account",
       "url": "https://github.com/diggsweden/wallet-account",
       "default_branch": "main",
-      "pushed_at": "2026-07-28T13:55:43Z",
+      "pushed_at": "2026-07-30T14:20:59Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -732,7 +732,7 @@
       "repo": "wallet-client-gateway",
       "url": "https://github.com/diggsweden/wallet-client-gateway",
       "default_branch": "main",
-      "pushed_at": "2026-07-30T12:41:19Z",
+      "pushed_at": "2026-07-30T14:19:33Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -907,5 +907,5 @@
       "renovate_dashboard_url": "https://github.com/diggsweden/wallet-verifier-test-web/issues/28"
     }
   ],
-  "imported_at": "2026-07-30T15:27:52Z"
+  "imported_at": "2026-07-30T16:57:57Z"
 }
