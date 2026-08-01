@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-31T19:18:56Z",
+  "generated_at": "2026-08-01T05:52:29Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "30658506496",
+    "workflow_run_id": "30686617621",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "codeowners",
     "json_report_path": "reporting/codeowners-report.json",
@@ -13,7 +13,7 @@
       "CODEOWNERS",
       "docs/CODEOWNERS"
     ],
-    "commit": "26b10d13ba9276ecfd2c2e92fdf0d820dd57f018",
+    "commit": "5a8927da6b83f6989fc58e7900fa249afd615e1d",
     "path": "reporting/codeowners-report.json",
     "report_path": "reporting/codeowners-report.json"
   },
@@ -158,7 +158,7 @@
       "repo": "devbase-check",
       "url": "https://github.com/diggsweden/devbase-check",
       "default_branch": "main",
-      "pushed_at": "2026-07-31T11:04:38Z",
+      "pushed_at": "2026-07-31T21:54:18Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -177,7 +177,7 @@
       "repo": "devbase-core",
       "url": "https://github.com/diggsweden/devbase-core",
       "default_branch": "main",
-      "pushed_at": "2026-07-31T11:06:33Z",
+      "pushed_at": "2026-07-31T21:31:59Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -196,7 +196,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-07-31T17:46:36Z",
+      "pushed_at": "2026-07-31T21:01:50Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -361,7 +361,7 @@
       "repo": "open-source-project-template",
       "url": "https://github.com/diggsweden/open-source-project-template",
       "default_branch": "main",
-      "pushed_at": "2026-07-31T12:45:48Z",
+      "pushed_at": "2026-07-31T22:47:13Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -380,7 +380,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-07-31T18:48:47Z",
+      "pushed_at": "2026-07-31T20:38:59Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -680,7 +680,7 @@
       "repo": "wallet-ecosystem",
       "url": "https://github.com/diggsweden/wallet-ecosystem",
       "default_branch": "main",
-      "pushed_at": "2026-07-31T08:48:37Z",
+      "pushed_at": "2026-07-31T21:59:22Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -786,5 +786,5 @@
       ]
     }
   ],
-  "imported_at": "2026-07-31T20:38:37Z"
+  "imported_at": "2026-08-01T06:12:06Z"
 }
