@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-05T20:31:39Z",
+  "generated_at": "2026-08-06T04:02:43Z",
   "latest_scorecard_at": "2026-08-05T06:20:08Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "31044407646",
+    "workflow_run_id": "31070092884",
     "scope_path": "reporting/scope.json",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "openssf_scorecard",
     "markdown_report_path": "reporting/openssf-scorecard-report.md",
     "json_report_path": "reporting/openssf-scorecard-report.json",
-    "commit": "945f1a5ce9085a1d0a6c4e073e33b1746676f0c2",
+    "commit": "2a7e0b30098c28dc9ae50a82cfff726bccc01611",
     "path": "reporting/openssf-scorecard-report.json",
     "report_path": "reporting/openssf-scorecard-report.json"
   },
@@ -20,8 +20,8 @@
     "repositories_with_score": 23,
     "repositories_without_score": 16,
     "repositories_with_approved_workflow": 16,
-    "repositories_without_approved_workflow": 18,
-    "repositories_with_unknown_workflow": 5,
+    "repositories_without_approved_workflow": 16,
+    "repositories_with_unknown_workflow": 7,
     "average_score": 7.2,
     "lowest_score": 5.7,
     "highest_score": 8.6
@@ -337,7 +337,7 @@
       "url": "https://github.com/diggsweden/mla",
       "score": 8.6,
       "score_status": "available",
-      "workflow_status": "missing_approved_workflow",
+      "workflow_status": "unknown",
       "status": "available",
       "date": "2026-08-03T02:52:06Z",
       "commit": "db11956790a628ac85f5b43749efee791d383581",
@@ -486,9 +486,9 @@
       "url": "https://github.com/diggsweden/reusable-ci",
       "score": null,
       "score_status": "missing_scorecard_data",
-      "workflow_status": "missing_approved_workflow",
+      "workflow_status": "unknown",
       "status": "missing_scorecard_data",
-      "reason": "approved_scorecard_workflow_missing",
+      "reason": "scorecard_data_unavailable",
       "date": null,
       "commit": null,
       "commit_short": null,
@@ -863,5 +863,5 @@
       "report_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/wallet-verifier-test-web/commit/1270928280b2ceca65bc3bce3bb054523e66da90"
     }
   ],
-  "imported_at": "2026-08-05T20:48:12Z"
+  "imported_at": "2026-08-06T04:32:44Z"
 }
