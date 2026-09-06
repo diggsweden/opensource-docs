@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-05T20:07:43Z",
+  "generated_at": "2026-09-06T03:10:14Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "33989138723",
+    "workflow_run_id": "34008285123",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "reuse",
     "json_report_path": "reporting/reuse-report.json",
-    "commit": "609c8e9581a21d3a51e5fdf25b7788c70122c201",
+    "commit": "9d3b59b4671f01c2267c52c104087c7e45cb1aa1",
     "path": "reporting/reuse-report.json",
     "report_path": "reporting/reuse-report.json"
   },
@@ -304,7 +304,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-05T19:07:08Z",
+      "pushed_at": "2026-09-05T20:09:34Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": false,
@@ -623,7 +623,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-05T19:31:03Z",
+      "pushed_at": "2026-09-05T20:30:49Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1010,7 +1010,7 @@
       "repo": "wallet-app-android",
       "url": "https://github.com/diggsweden/wallet-app-android",
       "default_branch": "main",
-      "pushed_at": "2026-09-04T11:29:36Z",
+      "pushed_at": "2026-09-06T01:28:10Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1142,7 +1142,7 @@
       "repo": "wallet-ecosystem",
       "url": "https://github.com/diggsweden/wallet-ecosystem",
       "default_branch": "main",
-      "pushed_at": "2026-09-04T08:34:31Z",
+      "pushed_at": "2026-09-05T21:24:36Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1175,7 +1175,7 @@
       "repo": "wallet-provider",
       "url": "https://github.com/diggsweden/wallet-provider",
       "default_branch": "main",
-      "pushed_at": "2026-09-04T08:29:36Z",
+      "pushed_at": "2026-09-06T01:31:40Z",
       "github_license": "EUPL-1.2",
       "license_file_present": true,
       "licenses_dir_present": true,
@@ -1209,7 +1209,7 @@
       "repo": "wallet-r2ps",
       "url": "https://github.com/diggsweden/wallet-r2ps",
       "default_branch": "main",
-      "pushed_at": "2026-09-04T14:22:00Z",
+      "pushed_at": "2026-09-06T02:16:12Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1299,7 +1299,7 @@
       "repo": "wallet-verifier-test-web",
       "url": "https://github.com/diggsweden/wallet-verifier-test-web",
       "default_branch": "main",
-      "pushed_at": "2026-09-04T00:47:55Z",
+      "pushed_at": "2026-09-05T21:31:14Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1325,5 +1325,5 @@
       "publiccode_license": null
     }
   ],
-  "imported_at": "2026-09-05T20:30:36Z"
+  "imported_at": "2026-09-06T03:35:05Z"
 }
