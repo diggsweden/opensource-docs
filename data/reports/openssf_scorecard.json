@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-07T09:12:16Z",
+  "generated_at": "2026-09-07T10:09:34Z",
   "latest_scorecard_at": "2026-09-07T07:19:43Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "34104632728",
+    "workflow_run_id": "34109897246",
     "scope_path": "reporting/scope.json",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "openssf_scorecard",
     "markdown_report_path": "reporting/openssf-scorecard-report.md",
     "json_report_path": "reporting/openssf-scorecard-report.json",
-    "commit": "f9071f0d0b71e115e2d55869c5fb4566353725ac",
+    "commit": "898744d78195b700e449ab2d137ab468f0caf504",
     "path": "reporting/openssf-scorecard-report.json",
     "report_path": "reporting/openssf-scorecard-report.json"
   },
@@ -20,8 +20,8 @@
     "repositories_with_score": 23,
     "repositories_without_score": 19,
     "repositories_with_approved_workflow": 15,
-    "repositories_without_approved_workflow": 21,
-    "repositories_with_unknown_workflow": 6,
+    "repositories_without_approved_workflow": 20,
+    "repositories_with_unknown_workflow": 7,
     "average_score": 7.3,
     "lowest_score": 6.2,
     "highest_score": 8.6
@@ -508,9 +508,9 @@
       "url": "https://github.com/diggsweden/reusable-ci",
       "score": null,
       "score_status": "missing_scorecard_data",
-      "workflow_status": "missing_approved_workflow",
+      "workflow_status": "unknown",
       "status": "missing_scorecard_data",
-      "reason": "approved_scorecard_workflow_missing",
+      "reason": "scorecard_data_unavailable",
       "date": null,
       "commit": null,
       "commit_short": null,
@@ -929,5 +929,5 @@
       "report_url": "https://ossf.github.io/scorecard-visualizer/#/projects/github.com/diggsweden/wallet-verifier-test-web/commit/cd8fcc40e561dca07bce1c63743189b6c912beec"
     }
   ],
-  "imported_at": "2026-09-07T09:38:48Z"
+  "imported_at": "2026-09-07T10:32:55Z"
 }
