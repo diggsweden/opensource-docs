@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-07T11:08:45Z",
+  "generated_at": "2026-09-07T12:14:03Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "34114964319",
+    "workflow_run_id": "34120610797",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "sca_renovate",
     "json_report_path": "reporting/sca-renovate-report.json",
@@ -13,7 +13,7 @@
       "local>diggsweden/.github:renovate-base",
       "github>diggsweden/.github//renovate-base.json"
     ],
-    "commit": "fc2867439b1fa5849780468a669edd524c7290a2",
+    "commit": "039978aadb9573cb508c5e115b3cb139ae7b2b85",
     "path": "reporting/sca-renovate-report.json",
     "report_path": "reporting/sca-renovate-report.json"
   },
@@ -227,7 +227,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-07T10:11:16Z",
+      "pushed_at": "2026-09-07T11:09:40Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -452,7 +452,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-07T10:33:09Z",
+      "pushed_at": "2026-09-07T11:31:45Z",
       "renovate_config_present": false,
       "renovate_config_status": "missing",
       "renovate_config_path": null,
@@ -492,7 +492,7 @@
       "repo": "rest-api-profil-lint-processor",
       "url": "https://github.com/diggsweden/rest-api-profil-lint-processor",
       "default_branch": "main",
-      "pushed_at": "2026-09-07T08:17:23Z",
+      "pushed_at": "2026-09-07T12:09:36Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -724,7 +724,7 @@
       "repo": "wallet-app-android",
       "url": "https://github.com/diggsweden/wallet-app-android",
       "default_branch": "main",
-      "pushed_at": "2026-09-07T10:59:45Z",
+      "pushed_at": "2026-09-07T12:12:13Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -814,7 +814,7 @@
       "repo": "wallet-ecosystem",
       "url": "https://github.com/diggsweden/wallet-ecosystem",
       "default_branch": "main",
-      "pushed_at": "2026-09-07T10:50:26Z",
+      "pushed_at": "2026-09-07T11:08:56Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -903,7 +903,7 @@
       "repo": "wallet-utvecklarportal",
       "url": "https://github.com/diggsweden/wallet-utvecklarportal",
       "default_branch": "main",
-      "pushed_at": "2026-09-07T09:51:48Z",
+      "pushed_at": "2026-09-07T11:58:19Z",
       "renovate_config_present": false,
       "renovate_config_status": "missing",
       "renovate_config_path": null,
@@ -942,5 +942,5 @@
       "renovate_dashboard_url": "https://github.com/diggsweden/wallet-verifier-test-web/issues/28"
     }
   ],
-  "imported_at": "2026-09-07T11:31:31Z"
+  "imported_at": "2026-09-07T12:41:54Z"
 }
