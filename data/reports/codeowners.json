@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-15T14:11:03Z",
+  "generated_at": "2026-09-15T15:09:59Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "34979675687",
+    "workflow_run_id": "34986370332",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "codeowners",
     "json_report_path": "reporting/codeowners-report.json",
@@ -13,7 +13,7 @@
       "CODEOWNERS",
       "docs/CODEOWNERS"
     ],
-    "commit": "a85d47b2ff10e81e095e26b88fc50d74fe31bb41",
+    "commit": "55c43c2988e3ee3b6c5a4e915d98bf428359d413",
     "path": "reporting/codeowners-report.json",
     "report_path": "reporting/codeowners-report.json"
   },
@@ -196,7 +196,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-15T13:10:16Z",
+      "pushed_at": "2026-09-15T14:11:31Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -397,7 +397,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-15T13:33:41Z",
+      "pushed_at": "2026-09-15T14:33:54Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -655,7 +655,7 @@
       "repo": "wallet-app-ios",
       "url": "https://github.com/diggsweden/wallet-app-ios",
       "default_branch": "main",
-      "pushed_at": "2026-09-15T13:26:53Z",
+      "pushed_at": "2026-09-15T14:36:46Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -674,7 +674,7 @@
       "repo": "wallet-client-gateway",
       "url": "https://github.com/diggsweden/wallet-client-gateway",
       "default_branch": "main",
-      "pushed_at": "2026-09-15T13:49:17Z",
+      "pushed_at": "2026-09-15T14:29:19Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -712,7 +712,7 @@
       "repo": "wallet-ecosystem",
       "url": "https://github.com/diggsweden/wallet-ecosystem",
       "default_branch": "main",
-      "pushed_at": "2026-09-15T13:59:09Z",
+      "pushed_at": "2026-09-15T14:43:24Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -805,7 +805,7 @@
       "repo": "wallet-verifier-test-web",
       "url": "https://github.com/diggsweden/wallet-verifier-test-web",
       "default_branch": "main",
-      "pushed_at": "2026-09-15T13:41:55Z",
+      "pushed_at": "2026-09-15T14:36:20Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -818,5 +818,5 @@
       ]
     }
   ],
-  "imported_at": "2026-09-15T14:33:41Z"
+  "imported_at": "2026-09-15T15:32:04Z"
 }
