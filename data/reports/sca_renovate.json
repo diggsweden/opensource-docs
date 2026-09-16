@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-16T17:08:35Z",
+  "generated_at": "2026-09-16T18:11:05Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "35126154745",
+    "workflow_run_id": "35132640022",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "sca_renovate",
     "json_report_path": "reporting/sca-renovate-report.json",
@@ -13,7 +13,7 @@
       "local>diggsweden/.github:renovate-base",
       "github>diggsweden/.github//renovate-base.json"
     ],
-    "commit": "8884b5ae39bcd7f1e55f4f87af3bd8568f3380dc",
+    "commit": "e7ff9dba78eafaef92c95f343b63554841c47c8e",
     "path": "reporting/sca-renovate-report.json",
     "report_path": "reporting/sca-renovate-report.json"
   },
@@ -227,7 +227,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-16T16:11:52Z",
+      "pushed_at": "2026-09-16T17:09:41Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -452,7 +452,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-16T16:33:47Z",
+      "pushed_at": "2026-09-16T17:30:59Z",
       "renovate_config_present": false,
       "renovate_config_status": "missing",
       "renovate_config_path": null,
@@ -903,7 +903,7 @@
       "repo": "wallet-requirements",
       "url": "https://github.com/diggsweden/wallet-requirements",
       "default_branch": "main",
-      "pushed_at": "2026-09-16T11:25:52Z",
+      "pushed_at": "2026-09-16T17:35:26Z",
       "renovate_config_present": false,
       "renovate_config_status": "missing",
       "renovate_config_path": null,
@@ -962,5 +962,5 @@
       "renovate_dashboard_url": "https://github.com/diggsweden/wallet-verifier-test-web/issues/28"
     }
   ],
-  "imported_at": "2026-09-16T17:30:43Z"
+  "imported_at": "2026-09-16T18:36:18Z"
 }
