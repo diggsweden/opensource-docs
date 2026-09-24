@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T09:09:22Z",
+  "generated_at": "2026-09-24T10:09:06Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "35979450220",
+    "workflow_run_id": "35985473127",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "reuse",
     "json_report_path": "reporting/reuse-report.json",
-    "commit": "d5107fa7361ae1435c5f8c75334e64c0318ae1c1",
+    "commit": "eec97de9967a7f29d4aee89d1cd9122cec98c2e2",
     "path": "reporting/reuse-report.json",
     "report_path": "reporting/reuse-report.json"
   },
@@ -59,7 +59,7 @@
       "repo": "android-access-mechanism",
       "url": "https://github.com/diggsweden/android-access-mechanism",
       "default_branch": "main",
-      "pushed_at": "2026-09-24T08:32:19Z",
+      "pushed_at": "2026-09-24T10:03:51Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -151,7 +151,7 @@
       "repo": "dataportal-web",
       "url": "https://github.com/diggsweden/dataportal-web",
       "default_branch": "main",
-      "pushed_at": "2026-09-16T16:41:54Z",
+      "pushed_at": "2026-09-24T09:22:12Z",
       "github_license": "BSD-2-Clause",
       "license_file_present": true,
       "licenses_dir_present": false,
@@ -304,7 +304,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-24T08:14:33Z",
+      "pushed_at": "2026-09-24T09:11:10Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": false,
@@ -623,7 +623,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-24T08:40:45Z",
+      "pushed_at": "2026-09-24T09:35:02Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -714,7 +714,7 @@
       "repo": "reusable-ci",
       "url": "https://github.com/diggsweden/reusable-ci",
       "default_branch": "main",
-      "pushed_at": "2026-09-24T07:20:57Z",
+      "pushed_at": "2026-09-24T09:51:00Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1353,5 +1353,5 @@
       "publiccode_license": null
     }
   ],
-  "imported_at": "2026-09-24T09:34:50Z"
+  "imported_at": "2026-09-24T10:34:21Z"
 }
