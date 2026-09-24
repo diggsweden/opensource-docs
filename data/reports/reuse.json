@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-24T07:11:26Z",
+  "generated_at": "2026-09-24T08:12:37Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "35968226693",
+    "workflow_run_id": "35973837952",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "reuse",
     "json_report_path": "reporting/reuse-report.json",
-    "commit": "90532dfa9986370cae962fabc7b01f0108187f3a",
+    "commit": "a0c68af2cce012504d3bc70dde653903c39a73bf",
     "path": "reporting/reuse-report.json",
     "report_path": "reporting/reuse-report.json"
   },
@@ -304,7 +304,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-24T06:16:08Z",
+      "pushed_at": "2026-09-24T07:13:14Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": false,
@@ -623,7 +623,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-24T06:48:30Z",
+      "pushed_at": "2026-09-24T07:36:25Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -682,7 +682,7 @@
       "repo": "rest-api-profil-lint-processor",
       "url": "https://github.com/diggsweden/rest-api-profil-lint-processor",
       "default_branch": "main",
-      "pushed_at": "2026-09-24T07:02:20Z",
+      "pushed_at": "2026-09-24T07:40:51Z",
       "github_license": "EUPL-1.2",
       "license_file_present": true,
       "licenses_dir_present": true,
@@ -714,7 +714,7 @@
       "repo": "reusable-ci",
       "url": "https://github.com/diggsweden/reusable-ci",
       "default_branch": "main",
-      "pushed_at": "2026-09-23T18:19:44Z",
+      "pushed_at": "2026-09-24T07:20:57Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1175,7 +1175,7 @@
       "repo": "wallet-provider",
       "url": "https://github.com/diggsweden/wallet-provider",
       "default_branch": "main",
-      "pushed_at": "2026-09-23T11:50:23Z",
+      "pushed_at": "2026-09-24T07:12:02Z",
       "github_license": "EUPL-1.2",
       "license_file_present": true,
       "licenses_dir_present": true,
@@ -1353,5 +1353,5 @@
       "publiccode_license": null
     }
   ],
-  "imported_at": "2026-09-24T07:36:10Z"
+  "imported_at": "2026-09-24T08:40:30Z"
 }
