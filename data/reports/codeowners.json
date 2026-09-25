@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T11:09:35Z",
+  "generated_at": "2026-09-25T12:14:37Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "36127685759",
+    "workflow_run_id": "36133614628",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "codeowners",
     "json_report_path": "reporting/codeowners-report.json",
@@ -13,7 +13,7 @@
       "CODEOWNERS",
       "docs/CODEOWNERS"
     ],
-    "commit": "f2d203abf1017a698a0ddc7aa8f9a09fbc1266b3",
+    "commit": "3a50f7c4cf4908eb0471dbd5816f667b2396f007",
     "path": "reporting/codeowners-report.json",
     "report_path": "reporting/codeowners-report.json"
   },
@@ -196,7 +196,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-25T10:11:00Z",
+      "pushed_at": "2026-09-25T11:10:02Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -397,7 +397,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-25T10:34:32Z",
+      "pushed_at": "2026-09-25T11:33:04Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -636,7 +636,7 @@
       "repo": "wallet-app-android",
       "url": "https://github.com/diggsweden/wallet-app-android",
       "default_branch": "main",
-      "pushed_at": "2026-09-25T10:35:03Z",
+      "pushed_at": "2026-09-25T11:24:48Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -674,7 +674,7 @@
       "repo": "wallet-client-gateway",
       "url": "https://github.com/diggsweden/wallet-client-gateway",
       "default_branch": "main",
-      "pushed_at": "2026-09-25T10:50:29Z",
+      "pushed_at": "2026-09-25T11:22:48Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -837,5 +837,5 @@
       ]
     }
   ],
-  "imported_at": "2026-09-25T11:32:50Z"
+  "imported_at": "2026-09-25T12:43:23Z"
 }
