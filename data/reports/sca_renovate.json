@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-26T10:08:15Z",
+  "generated_at": "2026-09-26T11:07:19Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "36234815154",
+    "workflow_run_id": "36237785400",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "sca_renovate",
     "json_report_path": "reporting/sca-renovate-report.json",
@@ -13,7 +13,7 @@
       "local>diggsweden/.github:renovate-base",
       "github>diggsweden/.github//renovate-base.json"
     ],
-    "commit": "aaeb6cf07413527283d12c3fd7133812bcf59bfc",
+    "commit": "4a7016cd993432b6dcefbc6e8f0c5d2e35ef893f",
     "path": "reporting/sca-renovate-report.json",
     "report_path": "reporting/sca-renovate-report.json"
   },
@@ -227,7 +227,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-26T09:10:18Z",
+      "pushed_at": "2026-09-26T10:08:49Z",
       "renovate_config_present": true,
       "renovate_config_status": "present",
       "renovate_config_path": "renovate.json",
@@ -452,7 +452,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-26T09:32:46Z",
+      "pushed_at": "2026-09-26T10:31:52Z",
       "renovate_config_present": false,
       "renovate_config_status": "missing",
       "renovate_config_path": null,
@@ -963,5 +963,5 @@
       "renovate_dashboard_url": "https://github.com/diggsweden/wallet-verifier-test-web/issues/28"
     }
   ],
-  "imported_at": "2026-09-26T10:31:33Z"
+  "imported_at": "2026-09-26T11:30:47Z"
 }
