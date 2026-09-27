@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-27T08:11:13Z",
+  "generated_at": "2026-09-27T09:08:48Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "36305371714",
+    "workflow_run_id": "36308413228",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "reuse",
     "json_report_path": "reporting/reuse-report.json",
-    "commit": "b28bbd72162b0607301fb488a86603febfe73658",
+    "commit": "67661b10df042b4d2b3e9b7093ec1975a6d496dc",
     "path": "reporting/reuse-report.json",
     "report_path": "reporting/reuse-report.json"
   },
@@ -304,7 +304,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-27T07:11:40Z",
+      "pushed_at": "2026-09-27T08:13:09Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": false,
@@ -623,7 +623,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-27T07:34:46Z",
+      "pushed_at": "2026-09-27T08:37:53Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1353,5 +1353,5 @@
       "publiccode_license": null
     }
   ],
-  "imported_at": "2026-09-27T08:37:37Z"
+  "imported_at": "2026-09-27T09:33:47Z"
 }
