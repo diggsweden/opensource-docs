@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-29T20:11:38Z",
+  "generated_at": "2026-09-30T03:12:53Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "36624328437",
+    "workflow_run_id": "36663262902",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "codeowners",
     "json_report_path": "reporting/codeowners-report.json",
@@ -13,7 +13,7 @@
       "CODEOWNERS",
       "docs/CODEOWNERS"
     ],
-    "commit": "9acc7b8d7e8b0cd77bd77ed80c9de101a2d8f2e1",
+    "commit": "12313e7f3ad0d2a5bc05b16c6467a7ae50b70d80",
     "path": "reporting/codeowners-report.json",
     "report_path": "reporting/codeowners-report.json"
   },
@@ -177,7 +177,7 @@
       "repo": "devbase-core",
       "url": "https://github.com/diggsweden/devbase-core",
       "default_branch": "main",
-      "pushed_at": "2026-09-29T10:24:59Z",
+      "pushed_at": "2026-09-30T03:08:03Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -196,7 +196,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-29T19:09:01Z",
+      "pushed_at": "2026-09-29T20:12:10Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -395,7 +395,7 @@
       "repo": "open-source-project-template",
       "url": "https://github.com/diggsweden/open-source-project-template",
       "default_branch": "main",
-      "pushed_at": "2026-09-27T20:57:37Z",
+      "pushed_at": "2026-09-30T02:10:05Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -414,7 +414,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-29T19:33:46Z",
+      "pushed_at": "2026-09-29T20:36:24Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -450,7 +450,7 @@
       "repo": "rest-api-profil-lint-processor",
       "url": "https://github.com/diggsweden/rest-api-profil-lint-processor",
       "default_branch": "main",
-      "pushed_at": "2026-09-28T20:25:24Z",
+      "pushed_at": "2026-09-29T21:40:09Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -854,5 +854,5 @@
       ]
     }
   ],
-  "imported_at": "2026-09-29T20:36:10Z"
+  "imported_at": "2026-09-30T03:40:23Z"
 }
