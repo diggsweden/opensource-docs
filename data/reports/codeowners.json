@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T14:11:14Z",
+  "generated_at": "2026-09-30T15:12:01Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "36726976735",
+    "workflow_run_id": "36734602849",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "codeowners",
     "json_report_path": "reporting/codeowners-report.json",
@@ -13,7 +13,7 @@
       "CODEOWNERS",
       "docs/CODEOWNERS"
     ],
-    "commit": "5b0bbbdfe444a7412c8cbc03b80c65151f10dfd2",
+    "commit": "9906f5885b3992756b78bc37bad535a0456f117e",
     "path": "reporting/codeowners-report.json",
     "report_path": "reporting/codeowners-report.json"
   },
@@ -196,7 +196,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-30T13:15:00Z",
+      "pushed_at": "2026-09-30T14:11:33Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -431,7 +431,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-30T13:36:47Z",
+      "pushed_at": "2026-09-30T14:38:21Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -890,5 +890,5 @@
       ]
     }
   ],
-  "imported_at": "2026-09-30T14:38:07Z"
+  "imported_at": "2026-09-30T15:37:01Z"
 }
