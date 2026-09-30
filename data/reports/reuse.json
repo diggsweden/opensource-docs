@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T12:14:11Z",
+  "generated_at": "2026-09-30T13:13:09Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "36713407680",
+    "workflow_run_id": "36719968943",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "reuse",
     "json_report_path": "reporting/reuse-report.json",
-    "commit": "f2b1dfe9731a624f533beed1d275bc132d5a70cb",
+    "commit": "4b0ce06d69eb1f05cfd2e796ae7a6b46ea4b5ec3",
     "path": "reporting/reuse-report.json",
     "report_path": "reporting/reuse-report.json"
   },
@@ -304,7 +304,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-09-30T11:10:33Z",
+      "pushed_at": "2026-09-30T12:16:28Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": false,
@@ -679,7 +679,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-09-30T11:33:36Z",
+      "pushed_at": "2026-09-30T12:50:37Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1099,7 +1099,7 @@
       "repo": "wallet-app-ios",
       "url": "https://github.com/diggsweden/wallet-app-ios",
       "default_branch": "main",
-      "pushed_at": "2026-09-30T07:53:26Z",
+      "pushed_at": "2026-09-30T13:07:25Z",
       "github_license": null,
       "license_file_present": false,
       "licenses_dir_present": true,
@@ -1443,5 +1443,5 @@
       "publiccode_license": null
     }
   ],
-  "imported_at": "2026-09-30T12:50:21Z"
+  "imported_at": "2026-09-30T13:36:32Z"
 }
