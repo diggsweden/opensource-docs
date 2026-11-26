@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26T15:07:09Z",
+  "generated_at": "2026-11-26T16:08:00Z",
   "source": {
     "repository": "diggsweden/digg-scorecard-monitor",
     "workflow": "scorecard-monitor.yml",
-    "workflow_run_id": "45845507667",
+    "workflow_run_id": "45855453699",
     "report_exclusions_path": "reporting/report-exclusions.json",
     "report_exclusion_key": "codeowners",
     "json_report_path": "reporting/codeowners-report.json",
@@ -13,7 +13,7 @@
       "CODEOWNERS",
       "docs/CODEOWNERS"
     ],
-    "commit": "08f7e7809317df6831b87ad7220f00e30ff4cfe8",
+    "commit": "e0b6a70da3ff0c173f36ee3516d4cbea1a350b09",
     "path": "reporting/codeowners-report.json",
     "report_path": "reporting/codeowners-report.json"
   },
@@ -196,7 +196,7 @@
       "repo": "digg-scorecard-monitor",
       "url": "https://github.com/diggsweden/digg-scorecard-monitor",
       "default_branch": "main",
-      "pushed_at": "2026-11-26T14:07:52Z",
+      "pushed_at": "2026-11-26T15:07:26Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -448,7 +448,7 @@
       "repo": "opensource-docs",
       "url": "https://github.com/diggsweden/opensource-docs",
       "default_branch": "main",
-      "pushed_at": "2026-11-26T14:30:50Z",
+      "pushed_at": "2026-11-26T15:30:55Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -707,7 +707,7 @@
       "repo": "wallet-app-android",
       "url": "https://github.com/diggsweden/wallet-app-android",
       "default_branch": "main",
-      "pushed_at": "2026-11-25T18:38:18Z",
+      "pushed_at": "2026-11-26T15:58:59Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -950,7 +950,7 @@
       "repo": "wallet-utvecklarportal",
       "url": "https://github.com/diggsweden/wallet-utvecklarportal",
       "default_branch": "main",
-      "pushed_at": "2026-11-26T13:52:01Z",
+      "pushed_at": "2026-11-26T15:54:06Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -969,7 +969,7 @@
       "repo": "wallet-verifier-test-web",
       "url": "https://github.com/diggsweden/wallet-verifier-test-web",
       "default_branch": "main",
-      "pushed_at": "2026-11-26T14:51:22Z",
+      "pushed_at": "2026-11-26T15:23:49Z",
       "codeowners_present": true,
       "codeowners_status": "present",
       "codeowners_path": "CODEOWNERS",
@@ -982,5 +982,5 @@
       ]
     }
   ],
-  "imported_at": "2026-11-26T15:30:37Z"
+  "imported_at": "2026-11-26T16:30:47Z"
 }
